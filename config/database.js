@@ -3,12 +3,7 @@ import { connect } from "mongoose";
 const connectDB = async () => {
   try {
     console.log("Attempting to connect to MongoDB...");
-    await connect(process.env.DATABASE_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      serverSelectionTimeoutMS: 20000, // 20 seconds
-      socketTimeoutMS: 45000, // 45 seconds
-    });
+    await connect(process.env.DATABASE_URL);
     console.log("MongoDB Connected...");
   } catch (err) {
     console.error("MongoDB connection error:", err);
