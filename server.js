@@ -23,7 +23,13 @@ connectDB();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ limit: "2000mb", extended: false }));
-app.use(cors({ origin: "*" }));
+app.use(
+  cors({
+    origin: "*", // Replace with your frontend URL
+    methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
+    allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
+  })
+);
 
 app.use("/api/auth", auth);
 app.use("/api/admin", admin);

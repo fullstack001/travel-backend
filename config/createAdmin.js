@@ -2,7 +2,7 @@ import bcrypt from "bcryptjs";
 import User from "../models/User";
 
 const createAdmin = async () => {
-  const name = "VinCheck Admin";
+  const name = "Admin";
   const salt = await bcrypt.genSalt(10);
   const password = await bcrypt.hash("123456", salt);
   const email = "admin@admin.com";
