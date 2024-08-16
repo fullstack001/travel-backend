@@ -18,7 +18,7 @@ dotenv.config();
 const app = express();
 
 connectDB();
-createAdmin();
+// createAdmin();
 // saveData();
 
 app.use(bodyParser.json());
