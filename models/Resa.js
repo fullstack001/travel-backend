@@ -3,11 +3,9 @@ import mongoose from "mongoose";
 const ResaSchema = new mongoose.Schema({
   dossier_no: {
     type: String,
-    require: true,
   },
   service_type: {
     type: String,
-    require: true,
   },
   arb_dep: {
     type: String,
