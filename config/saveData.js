@@ -12,7 +12,7 @@ function convertExcelTimeToTimeString(excelTime) {
   // Multiply by 24 to get hours, then split into hours and minutes
   const totalHours = excelTime * 24;
   const hours = Math.floor(totalHours);
-  const minutes = Math.round((totalHours - hours) * 60);
+  const minutes = Math.round((totalHours - hours) * 60) || 0;
 
   // Format hours and minutes to always show two digits
   const formattedHours = String(hours).padStart(2, "0");

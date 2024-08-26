@@ -205,6 +205,7 @@ router.post("/putdailydata", async (req, res) => {
       invoce_on: newData.invoce_on,
       status: newData.status,
       effect_date: newData.effect_date,
+      driver: newData.driver,
       inv_no: newData.inv_no,
     };
     if (newData._id) {
