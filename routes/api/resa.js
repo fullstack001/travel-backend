@@ -140,7 +140,21 @@ router.post("/putresadata", async (req, res) => {
 router.post("/getdailydata", async (req, res) => {
   const { date } = req.body;
   try {
-    const resaData = await Resa.find({ service_date: date });
+    // Start of the day (00:00:00)
+    const startOfDay = new Date(date);
+    startOfDay.setHours(0, 0, 0, 0);
+
+    // End of the day (23:59:59.999)
+    const endOfDay = new Date(date);
+    endOfDay.setHours(23, 59, 59, 999);
+
+    const resaData = await Resa.find({
+      service_date: {
+        $gte: startOfDay,
+        $lt: endOfDay,
+      },
+    });
+
     res.json(resaData);
   } catch (err) {
     console.error(err.message);

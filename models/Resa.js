@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const ResaSchema = new mongoose.Schema({
   dossier_no: {
-    type: String,
+    type: Number,
   },
   service_type: {
     type: String,
@@ -28,10 +28,10 @@ const ResaSchema = new mongoose.Schema({
     type: String,
   },
   service_date: {
-    type: String,
+    type: Date,
   },
   endofservice: {
-    type: String,
+    type: Date,
   },
   no_of_ngts: {
     type: String,
@@ -78,9 +78,6 @@ const ResaSchema = new mongoose.Schema({
   total_price: {
     type: String,
   },
-  discount: {
-    type: String,
-  },
   net_price: {
     type: String,
   },
@@ -100,7 +97,7 @@ const ResaSchema = new mongoose.Schema({
     type: String,
   },
   effect_date: {
-    type: String,
+    type: Date,
   },
   inv_no: {
     type: String,
