@@ -19,7 +19,7 @@ const app = express();
 
 connectDB();
 createAdmin();
-saveData();
+// saveData();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ limit: "2000mb", extended: false }));
