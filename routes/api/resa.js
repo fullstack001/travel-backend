@@ -142,10 +142,12 @@ router.post("/getdailydata", async (req, res) => {
   try {
     // Start of the day (00:00:00)
     const startOfDay = new Date(date);
+    startOfDay.setDate(startOfDay.getDate() + 1);
     startOfDay.setHours(0, 0, 0, 0);
 
     // End of the day (23:59:59.999)
     const endOfDay = new Date(date);
+    endOfDay.setDate(endOfDay.getDate() + 1);
     endOfDay.setHours(23, 59, 59, 999);
 
     const resaData = await Resa.find({

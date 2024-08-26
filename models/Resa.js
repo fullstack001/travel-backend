@@ -102,6 +102,9 @@ const ResaSchema = new mongoose.Schema({
   inv_no: {
     type: String,
   },
+  driver: {
+    type: String,
+  },
   date: {
     type: Date,
     default: Date.now(),
