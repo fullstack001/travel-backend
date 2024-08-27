@@ -117,7 +117,7 @@ const saveData = async () => {
   if (allData.resa && Array.isArray(allData.resa)) {
     let resaArray = allData.resa;
     resaArray.shift();
-    for (const item of resaArray) {
+    for (const item of resaArray.reverse()) {
       if (!dateFormat(item[8]) && !dateFormat(item[9])) continue;
       const resaData = {
         // Map your Excel columns to your Resa schema fields here
