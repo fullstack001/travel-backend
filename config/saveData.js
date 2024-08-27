@@ -117,11 +117,13 @@ const saveData = async () => {
   if (allData.resa && Array.isArray(allData.resa)) {
     let resaArray = allData.resa;
     resaArray.shift();
+    let autoNum = 4000;
     for (const item of resaArray.reverse()) {
       if (!dateFormat(item[8]) && !dateFormat(item[9])) continue;
+      autoNum++;
       const resaData = {
         // Map your Excel columns to your Resa schema fields here
-        dossier_no: item[0] && Number(item[0]) ? Number(item[0]) : null,
+        dossier_no: autoNum,
         service_type: item[1] || "",
         arb_dep: item[2] || "",
         client: item[3] || "",

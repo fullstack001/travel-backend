@@ -4,12 +4,15 @@ const router = express.Router();
 import Resa from "../../models/Resa";
 
 router.post("/getresadata", async (req, res) => {
-  const { orderKey, orderDirect, page = 1, limit = 10 } = req.body;
+  const { filterData, orderKey, orderDirect, page = 1, limit = 10 } = req.body;
   const pageNumber = parseInt(page, 10);
   const pageSize = parseInt(limit, 10);
   try {
     // Fetch data with sorting and pagination
-    const resaData = await Resa.find()
+    const filter = filterData
+      ? { client: { $regex: filterData, $options: "i" } } // "i" for case-insensitive search
+      : {};
+    const resaData = await Resa.find(filter)
       .sort({ [orderDirect]: orderKey === "asc" ? 1 : -1 }) // Sort based on order and orderBy
       .skip((pageNumber - 1) * pageSize) // Skip to the correct page
       .limit(pageSize); // Limit the number of records
@@ -31,7 +34,14 @@ router.post("/getresadata", async (req, res) => {
 });
 
 router.post("/deletedata", async (req, res) => {
-  const { orderKey, orderDirect, page = 1, limit = 10, id } = req.body;
+  const {
+    filterData,
+    orderKey,
+    orderDirect,
+    page = 1,
+    limit = 10,
+    id,
+  } = req.body;
   const pageNumber = parseInt(page, 10);
   const pageSize = parseInt(limit, 10);
   try {
@@ -39,7 +49,10 @@ router.post("/deletedata", async (req, res) => {
     await Resa.findByIdAndDelete(id);
 
     // Fetch data with sorting and pagination
-    const resaData = await Resa.find()
+    const filter = filterData
+      ? { client: { $regex: filterData, $options: "i" } } // "i" for case-insensitive search
+      : {};
+    const resaData = await Resa.find(filter)
       .sort({ [orderDirect]: orderKey === "asc" ? 1 : -1 }) // Sort based on order and orderBy
       .skip((pageNumber - 1) * pageSize) // Skip to the correct page
       .limit(pageSize); // Limit the number of records
@@ -90,7 +103,14 @@ router.post("/deletedailydata", async (req, res) => {
 });
 
 router.post("/putresadata", async (req, res) => {
-  const { orderKey, orderDirect, newData, page = 1, limit = 10 } = req.body;
+  const {
+    filterData,
+    orderKey,
+    orderDirect,
+    newData,
+    page = 1,
+    limit = 10,
+  } = req.body;
   const pageNumber = parseInt(page, 10);
   const pageSize = parseInt(limit, 10);
   try {
@@ -143,8 +163,11 @@ router.post("/putresadata", async (req, res) => {
       // If _id is empty or not provided, create a new document
       await Resa.create(newItem);
     }
+    const filter = filterData
+      ? { client: { $regex: filterData, $options: "i" } } // "i" for case-insensitive search
+      : {};
 
-    const resaData = await Resa.find()
+    const resaData = await Resa.find(filter)
       .sort({ [orderDirect]: orderKey === "asc" ? 1 : -1 }) // Sort based on order and orderBy
       .skip((pageNumber - 1) * pageSize) // Skip to the correct page
       .limit(pageSize); // Limit the number of records
@@ -206,6 +229,7 @@ router.post("/putdailydata", async (req, res) => {
       status: newData.status,
       effect_date: newData.effect_date,
       driver: newData.driver,
+      guid: newData.guid,
       inv_no: newData.inv_no,
     };
     if (newData._id) {

@@ -105,6 +105,9 @@ const ResaSchema = new mongoose.Schema({
   driver: {
     type: String,
   },
+  guid: {
+    type: String,
+  },
   date: {
     type: Date,
     default: Date.now(),
