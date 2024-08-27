@@ -12,20 +12,34 @@ router.post("/getresadata", async (req, res) => {
     const filter = filterData
       ? { client: { $regex: filterData, $options: "i" } } // "i" for case-insensitive search
       : {};
-    const resaData = await Resa.find(filter)
+
+    const resaDataPromise = Resa.find(filter)
       .sort({ [orderDirect]: orderKey === "asc" ? 1 : -1 }) // Sort based on order and orderBy
       .skip((pageNumber - 1) * pageSize) // Skip to the correct page
       .limit(pageSize); // Limit the number of records
 
-    // Count total documents
-    const totalDocuments = await Resa.countDocuments();
+    const totalDocumentsPromise = Resa.countDocuments(filter); // Include the filter here
 
+    const maxDossierNoPromise = Resa.aggregate([
+      { $group: { _id: null, maxDossierNo: { $max: "$dossier_no" } } },
+    ]);
+
+    // Resolve all promises concurrently
+    const [resaData, totalDocuments, maxDossierNoResult] = await Promise.all([
+      resaDataPromise,
+      totalDocumentsPromise,
+      maxDossierNoPromise,
+    ]);
+
+    const maxDossierNo =
+      maxDossierNoResult.length > 0 ? maxDossierNoResult[0].maxDossierNo : null;
     // Send response
     res.json({
       data: resaData,
       currentPage: pageNumber,
       totalPages: Math.ceil(totalDocuments / pageSize),
       totalItems: totalDocuments,
+      maxDossierNo: maxDossierNo,
     });
   } catch (err) {
     console.error(err.message);
@@ -48,24 +62,37 @@ router.post("/deletedata", async (req, res) => {
     // Delete the document with the specified id
     await Resa.findByIdAndDelete(id);
 
-    // Fetch data with sorting and pagination
     const filter = filterData
       ? { client: { $regex: filterData, $options: "i" } } // "i" for case-insensitive search
       : {};
-    const resaData = await Resa.find(filter)
+
+    const resaDataPromise = Resa.find(filter)
       .sort({ [orderDirect]: orderKey === "asc" ? 1 : -1 }) // Sort based on order and orderBy
       .skip((pageNumber - 1) * pageSize) // Skip to the correct page
       .limit(pageSize); // Limit the number of records
 
-    // Count total documents
-    const totalDocuments = await Resa.countDocuments();
+    const totalDocumentsPromise = Resa.countDocuments(filter); // Include the filter here
 
+    const maxDossierNoPromise = Resa.aggregate([
+      { $group: { _id: null, maxDossierNo: { $max: "$dossier_no" } } },
+    ]);
+
+    // Resolve all promises concurrently
+    const [resaData, totalDocuments, maxDossierNoResult] = await Promise.all([
+      resaDataPromise,
+      totalDocumentsPromise,
+      maxDossierNoPromise,
+    ]);
+
+    const maxDossierNo =
+      maxDossierNoResult.length > 0 ? maxDossierNoResult[0].maxDossierNo : null;
     // Send response
     res.json({
       data: resaData,
       currentPage: pageNumber,
       totalPages: Math.ceil(totalDocuments / pageSize),
       totalItems: totalDocuments,
+      maxDossierNo: maxDossierNo,
     });
   } catch (err) {
     console.error(err.message);
@@ -167,20 +194,33 @@ router.post("/putresadata", async (req, res) => {
       ? { client: { $regex: filterData, $options: "i" } } // "i" for case-insensitive search
       : {};
 
-    const resaData = await Resa.find(filter)
+    const resaDataPromise = Resa.find(filter)
       .sort({ [orderDirect]: orderKey === "asc" ? 1 : -1 }) // Sort based on order and orderBy
       .skip((pageNumber - 1) * pageSize) // Skip to the correct page
       .limit(pageSize); // Limit the number of records
 
-    // Count total documents
-    const totalDocuments = await Resa.countDocuments();
+    const totalDocumentsPromise = Resa.countDocuments(filter); // Include the filter here
 
+    const maxDossierNoPromise = Resa.aggregate([
+      { $group: { _id: null, maxDossierNo: { $max: "$dossier_no" } } },
+    ]);
+
+    // Resolve all promises concurrently
+    const [resaData, totalDocuments, maxDossierNoResult] = await Promise.all([
+      resaDataPromise,
+      totalDocumentsPromise,
+      maxDossierNoPromise,
+    ]);
+
+    const maxDossierNo =
+      maxDossierNoResult.length > 0 ? maxDossierNoResult[0].maxDossierNo : null;
     // Send response
     res.json({
       data: resaData,
       currentPage: pageNumber,
       totalPages: Math.ceil(totalDocuments / pageSize),
       totalItems: totalDocuments,
+      maxDossierNo: maxDossierNo,
     });
   } catch (error) {
     console.error(error);
