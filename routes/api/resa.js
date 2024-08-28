@@ -100,35 +100,6 @@ router.post("/deletedata", async (req, res) => {
   }
 });
 
-router.post("/deletedailydata", async (req, res) => {
-  const { date, id } = req.body;
-  try {
-    // Delete the document with the specified id
-    await Resa.findByIdAndDelete(id);
-
-    const startOfDay = new Date(date);
-    startOfDay.setDate(startOfDay.getDate());
-    startOfDay.setHours(0, 0, 0, 0);
-
-    // End of the day (23:59:59.999)
-    const endOfDay = new Date(date);
-    endOfDay.setDate(endOfDay.getDate());
-    endOfDay.setHours(23, 59, 59, 999);
-
-    const resaData = await Resa.find({
-      service_date: {
-        $gte: startOfDay,
-        $lt: endOfDay,
-      },
-    });
-
-    res.json(resaData);
-  } catch (err) {
-    console.error(err.message);
-    res.status(500).send("Server error");
-  }
-});
-
 router.post("/putresadata", async (req, res) => {
   const {
     filterData,
@@ -228,6 +199,88 @@ router.post("/putresadata", async (req, res) => {
   }
 });
 
+router.post("/getdailydata", async (req, res) => {
+  const { date } = req.body;
+  try {
+    // Start of the day (00:00:00)
+    const startOfDay = new Date(date);
+    startOfDay.setDate(startOfDay.getDate());
+    startOfDay.setHours(0, 0, 0, 0);
+
+    // End of the day (23:59:59.999)
+    const endOfDay = new Date(date);
+    endOfDay.setDate(endOfDay.getDate());
+    endOfDay.setHours(23, 59, 59, 999);
+
+    const resaData = await Resa.find({
+      service_date: {
+        $gte: startOfDay,
+        $lt: endOfDay,
+      },
+    });
+
+    // Find the maximum res_num within the same date range
+    const maxResNum = await Resa.aggregate([
+      {
+        $group: {
+          _id: null,
+          maxResNum: { $max: "$dossier_no" },
+        },
+      },
+    ]);
+
+    // Extract maxResNum value or set it to null if no data found
+    const maxResNumValue = maxResNum.length > 0 ? maxResNum[0].maxResNum : null;
+
+    res.json({ data: resaData, max_num: maxResNumValue });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server error");
+  }
+});
+
+router.post("/deletedailydata", async (req, res) => {
+  const { date, id } = req.body;
+  try {
+    // Delete the document with the specified id
+    await Resa.findByIdAndDelete(id);
+
+    const startOfDay = new Date(date);
+    startOfDay.setDate(startOfDay.getDate());
+    startOfDay.setHours(0, 0, 0, 0);
+
+    // End of the day (23:59:59.999)
+    const endOfDay = new Date(date);
+    endOfDay.setDate(endOfDay.getDate());
+    endOfDay.setHours(23, 59, 59, 999);
+
+    const resaData = await Resa.find({
+      service_date: {
+        $gte: startOfDay,
+        $lt: endOfDay,
+      },
+    });
+
+    // Find the maximum res_num within the same date range
+    const maxResNum = await Resa.aggregate([
+      {
+        $group: {
+          _id: null,
+          maxResNum: { $max: "$dossier_no" },
+        },
+      },
+    ]);
+
+    // Extract maxResNum value or set it to null if no data found
+    const maxResNumValue = maxResNum.length > 0 ? maxResNum[0].maxResNum : null;
+
+    res.json({ data: resaData, max_num: maxResNumValue });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server error");
+  }
+});
+
 router.post("/putdailydata", async (req, res) => {
   const { date, newData } = req.body;
   console.log(newData);
@@ -301,37 +354,23 @@ router.post("/putdailydata", async (req, res) => {
       },
     });
 
-    res.json(resaData);
+    // Find the maximum res_num within the same date range
+    const maxResNum = await Resa.aggregate([
+      {
+        $group: {
+          _id: null,
+          maxResNum: { $max: "$dossier_no" },
+        },
+      },
+    ]);
+
+    // Extract maxResNum value or set it to null if no data found
+    const maxResNumValue = maxResNum.length > 0 ? maxResNum[0].maxResNum : null;
+
+    res.json({ data: resaData, max_num: maxResNumValue });
   } catch (error) {
     console.error(error);
     res.status(500).json({ success: false, message: "Internal Server Error" });
-  }
-});
-
-router.post("/getdailydata", async (req, res) => {
-  const { date } = req.body;
-  try {
-    // Start of the day (00:00:00)
-    const startOfDay = new Date(date);
-    startOfDay.setDate(startOfDay.getDate());
-    startOfDay.setHours(0, 0, 0, 0);
-
-    // End of the day (23:59:59.999)
-    const endOfDay = new Date(date);
-    endOfDay.setDate(endOfDay.getDate());
-    endOfDay.setHours(23, 59, 59, 999);
-
-    const resaData = await Resa.find({
-      service_date: {
-        $gte: startOfDay,
-        $lt: endOfDay,
-      },
-    });
-
-    res.json(resaData);
-  } catch (err) {
-    console.error(err.message);
-    res.status(500).send("Server error");
   }
 });
 
