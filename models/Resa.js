@@ -108,6 +108,15 @@ const ResaSchema = new mongoose.Schema({
   guid: {
     type: String,
   },
+  agency_ref_no: {
+    type: String,
+  },
+  pickup_time: {
+    type: String,
+  },
+  type_vehicle: {
+    type: String,
+  },
   date: {
     type: Date,
     default: Date.now(),

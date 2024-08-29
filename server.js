@@ -12,6 +12,9 @@ import saveData from "./config/saveData";
 import auth from "./routes/api/auth";
 import admin from "./routes/api/admin";
 import resa from "./routes/api/resa";
+import hotel from "./routes/api/hotel";
+import agency from "./routes/api/agency";
+import service from "./routes/api/service";
 
 dotenv.config();
 
@@ -28,6 +31,9 @@ app.use(cors());
 app.use("/api/auth", auth);
 app.use("/api/admin", admin);
 app.use("/api/resa", resa);
+app.use("/api/hotel", hotel);
+app.use("/api/agency", agency);
+app.use("/api/service", service);
 
 app.get("/", (req, res) => {
   res.send(" API Running");
