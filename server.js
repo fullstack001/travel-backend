@@ -15,6 +15,7 @@ import resa from "./routes/api/resa";
 import hotel from "./routes/api/hotel";
 import agency from "./routes/api/agency";
 import service from "./routes/api/service";
+import driver from "./routes/api/driver";
 
 dotenv.config();
 
@@ -34,6 +35,7 @@ app.use("/api/resa", resa);
 app.use("/api/hotel", hotel);
 app.use("/api/agency", agency);
 app.use("/api/service", service);
+app.use("/api/driver", driver);
 
 app.get("/", (req, res) => {
   res.send(" API Running");

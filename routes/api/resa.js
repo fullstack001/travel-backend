@@ -193,15 +193,16 @@ router.post("/putresadata", async (req, res) => {
 });
 
 router.post("/getdailydata", async (req, res) => {
-  const { date } = req.body;
+  const { start, end } = req.body.data;
+  console.log(req.body);
   try {
     // Start of the day (00:00:00)
-    const startOfDay = new Date(date);
+    const startOfDay = new Date(start);
     startOfDay.setDate(startOfDay.getDate());
     startOfDay.setHours(0, 0, 0, 0);
 
     // End of the day (23:59:59.999)
-    const endOfDay = new Date(date);
+    const endOfDay = new Date(end);
     endOfDay.setDate(endOfDay.getDate());
     endOfDay.setHours(23, 59, 59, 999);
 
@@ -233,17 +234,17 @@ router.post("/getdailydata", async (req, res) => {
 });
 
 router.post("/deletedailydata", async (req, res) => {
-  const { date, id } = req.body;
+  const { start, end, id } = req.body;
   try {
     // Delete the document with the specified id
     await Resa.findByIdAndDelete(id);
 
-    const startOfDay = new Date(date);
+    const startOfDay = new Date(start);
     startOfDay.setDate(startOfDay.getDate());
     startOfDay.setHours(0, 0, 0, 0);
 
     // End of the day (23:59:59.999)
-    const endOfDay = new Date(date);
+    const endOfDay = new Date(end);
     endOfDay.setDate(endOfDay.getDate());
     endOfDay.setHours(23, 59, 59, 999);
 
@@ -275,7 +276,7 @@ router.post("/deletedailydata", async (req, res) => {
 });
 
 router.post("/putdailydata", async (req, res) => {
-  const { date, newData } = req.body;
+  const { start, end, newData } = req.body;
   console.log(newData);
 
   try {
@@ -324,12 +325,12 @@ router.post("/putdailydata", async (req, res) => {
       await Resa.create(newItem);
     }
 
-    const startOfDay = new Date(date);
+    const startOfDay = new Date(start);
     startOfDay.setDate(startOfDay.getDate());
     startOfDay.setHours(0, 0, 0, 0);
 
     // End of the day (23:59:59.999)
-    const endOfDay = new Date(date);
+    const endOfDay = new Date(end);
     endOfDay.setDate(endOfDay.getDate());
     endOfDay.setHours(23, 59, 59, 999);
 
