@@ -27,7 +27,14 @@ connectDB();
 createAdmin();
 // saveData();
 
-app.use(cors({ origin: "*" }));
+// CORS configuration
+app.use(
+  cors({
+    origin: "*", // Allows all origins
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Allow specific HTTP methods
+    allowedHeaders: ["Content-Type", "Authorization"], // Allow specific headers
+  })
+);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ limit: "2000mb", extended: false }));
 
