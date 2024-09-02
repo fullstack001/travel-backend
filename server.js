@@ -27,9 +27,9 @@ connectDB();
 createAdmin();
 // saveData();
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ limit: "2000mb", extended: false }));
-app.use(cors());
 
 // // Serve static files from the dist directory
 // app.use(express.static(path.join(__dirname, "dist")));
