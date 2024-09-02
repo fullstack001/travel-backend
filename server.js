@@ -27,7 +27,7 @@ connectDB();
 createAdmin();
 // saveData();
 
-app.use(cors());
+app.use(cors({ origin: "*" }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ limit: "2000mb", extended: false }));
 
