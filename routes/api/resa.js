@@ -421,4 +421,35 @@ router.post("/putdailydata", async (req, res) => {
   }
 });
 
+router.post("/getexportdata", async (req, res) => {
+  const { start, end } = req.body.data;
+
+  try {
+    let query = {};
+
+    if (start && end && new Date(end) > new Date(start)) {
+      // Start of the day (00:00:00)
+      const startOfDay = new Date(start);
+      startOfDay.setHours(0, 0, 0, 0);
+
+      // End of the day (23:59:59.999)
+      const endOfDay = new Date(end);
+      endOfDay.setHours(23, 59, 59, 999);
+
+      // If start and end are valid, create a query to filter by service_date
+      query.service_date = {
+        $gte: startOfDay,
+        $lt: endOfDay,
+      };
+    }
+
+    const resaData = await Resa.find(query);
+
+    res.json({ data: resaData });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server error");
+  }
+});
+
 export default router;
