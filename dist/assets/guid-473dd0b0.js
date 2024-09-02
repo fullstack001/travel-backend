@@ -1,0 +1,1 @@
+import{a}from"./axios-9b9683dd.js";const e="http://127.0.0.1:5005",c=async()=>{try{return(await a.get(`${e}/api/guid/`)).data}catch{return 500}},d=async t=>{try{return(await a.post(`${e}/api/guid/putguiddata`,t)).data}catch{return 500}},o=async t=>{try{return(await a.post(`${e}/api/guid/deletedata`,t)).data}catch{return 500}};export{o as d,c as g,d as p};
