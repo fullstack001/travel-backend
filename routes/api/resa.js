@@ -47,6 +47,67 @@ router.post("/getresadata", async (req, res) => {
   }
 });
 
+router.post("/getresadata-date", async (req, res) => {
+  const {
+    start,
+    end,
+    filterData,
+    orderKey,
+    orderDirect,
+    page = 1,
+    limit = 10,
+  } = req.body;
+  const pageNumber = parseInt(page, 10);
+  const pageSize = parseInt(limit, 10);
+  const startOfDay = new Date(start);
+  startOfDay.setDate(startOfDay.getDate());
+  startOfDay.setHours(0, 0, 0, 0);
+
+  // End of the day (23:59:59.999)
+  const endOfDay = new Date(end);
+  endOfDay.setDate(endOfDay.getDate());
+  endOfDay.setHours(23, 59, 59, 999);
+  try {
+    // Fetch data with sorting and pagination
+    const filter = {
+      ...(filterData && { client: { $regex: filterData, $options: "i" } }), // Filter by client if filterData is provided
+      service_date: { $gte: startOfDay, $lte: endOfDay }, // Filter by date range
+    };
+
+    const resaDataPromise = Resa.find(filter)
+      .sort({ [orderDirect]: orderKey === "asc" ? 1 : -1 }) // Sort based on order and orderBy
+      .skip((pageNumber - 1) * pageSize) // Skip to the correct page
+      .limit(pageSize); // Limit the number of records
+
+    const totalDocumentsPromise = Resa.countDocuments(filter); // Include the filter here
+
+    const maxDossierNoPromise = Resa.aggregate([
+      { $group: { _id: null, maxDossierNo: { $max: "$dossier_no" } } },
+    ]);
+
+    // Resolve all promises concurrently
+    const [resaData, totalDocuments, maxDossierNoResult] = await Promise.all([
+      resaDataPromise,
+      totalDocumentsPromise,
+      maxDossierNoPromise,
+    ]);
+
+    const maxDossierNo =
+      maxDossierNoResult.length > 0 ? maxDossierNoResult[0].maxDossierNo : null;
+    // Send response
+    res.json({
+      data: resaData,
+      currentPage: pageNumber,
+      totalPages: Math.ceil(totalDocuments / pageSize),
+      totalItems: totalDocuments,
+      maxDossierNo: maxDossierNo,
+    });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server error");
+  }
+});
+
 router.post("/deletedata", async (req, res) => {
   const {
     filterData,
@@ -194,7 +255,6 @@ router.post("/putresadata", async (req, res) => {
 
 router.post("/getdailydata", async (req, res) => {
   const { start, end } = req.body.data;
-  console.log(req.body);
   try {
     // Start of the day (00:00:00)
     const startOfDay = new Date(start);

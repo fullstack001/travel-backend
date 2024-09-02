@@ -16,6 +16,8 @@ import hotel from "./routes/api/hotel";
 import agency from "./routes/api/agency";
 import service from "./routes/api/service";
 import driver from "./routes/api/driver";
+import vehicle from "./routes/api/vehicle";
+import guid from "./routes/api/guid";
 
 dotenv.config();
 
@@ -36,6 +38,8 @@ app.use("/api/hotel", hotel);
 app.use("/api/agency", agency);
 app.use("/api/service", service);
 app.use("/api/driver", driver);
+app.use("/api/vehicle", vehicle);
+app.use("/api/guid", guid);
 
 app.get("/", (req, res) => {
   res.send(" API Running");
