@@ -1,0 +1,1 @@
+import{aa as e,j as a,af as r}from"./index-260d8090.js";import{u as s}from"./userStroe-d75e55aa.js";function i(){const{setUser:t}=s();return t({isAuth:!1}),e.remove("token"),a.jsx(r,{to:"/",replace:!0})}export{i as default};
