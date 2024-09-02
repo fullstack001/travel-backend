@@ -27,25 +27,7 @@ connectDB();
 createAdmin();
 // saveData();
 
-const allowedOrigins = [
-  "http://front-escapadezanzibar.exclusive-technology.net",
-  "http://127.0.0.1:3030",
-  "https://front-escapadezanzibar.exclusive-technology.net", // Add other allowed domains here
-];
-
-app.use(
-  cors({
-    origin: (origin, callback) => {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true); // Allow the request
-      } else {
-        callback(new Error("Not allowed by CORS")); // Reject the request
-      }
-    },
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ limit: "2000mb", extended: false }));
 
