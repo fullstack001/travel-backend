@@ -31,8 +31,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ limit: "2000mb", extended: false }));
 app.use(cors());
 
-// Serve static files from the dist directory
-app.use(express.static(path.join(__dirname, "dist")));
+// // Serve static files from the dist directory
+// app.use(express.static(path.join(__dirname, "dist")));
 
 app.use("/api/auth", auth);
 app.use("/api/admin", admin);
@@ -44,10 +44,10 @@ app.use("/api/driver", driver);
 app.use("/api/vehicle", vehicle);
 app.use("/api/guid", guid);
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "dist", "index.html"));
-});
-const port = process.env.PORT || 5005;
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "dist", "index.html"));
+// });
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server is running on port:${port}`);
 });
