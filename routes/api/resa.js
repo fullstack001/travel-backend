@@ -427,7 +427,7 @@ router.post("/getexportdata", async (req, res) => {
   try {
     let query = {};
 
-    if (start && end && new Date(end) > new Date(start)) {
+    if (start && end && !(new Date(end) > new Date(start))) {
       // Start of the day (00:00:00)
       const startOfDay = new Date(start);
       startOfDay.setHours(0, 0, 0, 0);
@@ -449,6 +449,29 @@ router.post("/getexportdata", async (req, res) => {
   } catch (err) {
     console.error(err.message);
     res.status(500).send("Server error");
+  }
+});
+
+router.get("/dashboarddata", async (req, res) => {
+  try {
+    const data = await Resa.aggregate([
+      {
+        $group: {
+          _id: "$arb_dep", // Group by arb_dep
+          count: { $sum: 1 }, // Count the number of items in each group
+        },
+      },
+      {
+        $sort: { _id: 1 }, // Optionally sort the results by arb_dep
+      },
+    ]);
+    console.log(data);
+
+    res.status(200).json(data); // Send the aggregated data back to the client
+  } catch (error) {
+    res
+      .status(500)
+      .json({ message: "Error fetching data", error: error.message });
   }
 });
 
