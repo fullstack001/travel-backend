@@ -6,9 +6,6 @@ import jwt from "jsonwebtoken";
 import { check, validationResult } from "express-validator";
 import jwtSecret from "../../config/jwtSecret";
 
-import formData from "form-data";
-import Mailgun from "mailgun.js";
-
 import auth from "../../middleware/auth";
 
 import dotenv from "dotenv";
@@ -17,19 +14,6 @@ dotenv.config();
 const router = express.Router();
 
 import User from "../../models/User";
-
-const mailgun = new Mailgun(formData);
-
-const mg = mailgun.client({
-  username: "api",
-  key:
-    process.env.MAILGUN_API_KEY ||
-    "edb14c51bf49f676ea581c1145db7efa-6fafb9bf-36bd02c5",
-});
-
-// @route    POST api/auth/signin
-// @desc     Register user
-// @access   Public
 
 router.post(
   "/signin",
@@ -60,15 +44,13 @@ router.post(
           name: user.name,
           id: user._id,
           email: user.email,
-          isAdmin: user.isAdmin,
-          credit: user.credit,
-          following: user.following,
+          role: user.role,
         },
       };
 
       jwt.sign(payload, jwtSecret, { expiresIn: "1 days" }, (err, token) => {
         if (err) throw err;
-        res.json({ token });
+        res.json({ token, user: { ...payload.user, isAuth: true } });
       });
     } catch (err) {
       console.error(err.message);
@@ -174,7 +156,7 @@ router.post(
 
       jwt.sign(payload, jwtSecret, { expiresIn: "1 days" }, (err, token) => {
         if (err) throw err;
-        res.json({ token });
+        res.json({ token, user: { ...payload.user, isAuth: true } });
       });
     } catch (err) {
       console.error(err.message);
@@ -241,8 +223,5 @@ router.post("/changepass/:id", auth, async (req, res) => {
     res.status(500).json({ msg: "The email already exist" });
   }
 });
-
-
-
 
 module.exports = router;

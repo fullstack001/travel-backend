@@ -7,14 +7,6 @@ const ServiceSchema = new mongoose.Schema({
   name: {
     type: String,
   },
-  ad_claim: {
-    type: Number,
-  },
-  ch_claim: {
-    type: Number,
-  },
-  cur: { type: String },
-
   date: {
     type: Date,
     default: Date.now(),

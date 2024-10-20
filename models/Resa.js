@@ -4,36 +4,53 @@ const ResaSchema = new mongoose.Schema({
   dossier_no: {
     type: Number,
   },
-  service_type: {
-    type: String,
-  },
-  arb_dep: {
+  by: {
     type: String,
     default: "",
   },
-  client: {
+  verified: {
+    type: Boolean,
+    default: false,
+  },
+  status: {
+    type: String,
+    default: "",
+  },
+  service: {
+    type: String,
+    default: "",
+  },
+  service_type: {
+    type: String,
+  },
+  agency_ref: {
     type: String,
     default: "",
   },
   agency: {
     type: String,
   },
+  client: {
+    type: String,
+    default: "",
+  },
   from: {
     type: String,
   },
-  hotel: {
+  to: {
     type: String,
   },
-  htl_region: {
+  excursion: {
     type: String,
+    default: "",
   },
   service_date: {
     type: Date,
   },
-  endofservice: {
-    type: Date,
+  flight_no: {
+    type: String,
   },
-  no_of_ngts: {
+  flight_time: {
     type: String,
   },
   adult: {
@@ -48,22 +65,22 @@ const ResaSchema = new mongoose.Schema({
   teen: {
     type: String,
   },
-  free: {
-    type: String,
-  },
-  flight_no: {
-    type: String,
-  },
-  flight_time: {
-    type: String,
-  },
   resa_remark: {
     type: String,
   },
-  service: {
+  from_region: {
     type: String,
   },
-  service_detail: {
+  to_region: {
+    type: String,
+  },
+  vehicle_type: {
+    type: String,
+  },
+  inv_no: {
+    type: String,
+  },
+  amount: {
     type: String,
   },
   adult_price: {
@@ -78,28 +95,7 @@ const ResaSchema = new mongoose.Schema({
   total_price: {
     type: String,
   },
-  net_price: {
-    type: String,
-  },
-  cash_credit: {
-    type: String,
-  },
   cur: {
-    type: String,
-  },
-  roe: {
-    type: String,
-  },
-  invoce_on: {
-    type: String,
-  },
-  status: {
-    type: String,
-  },
-  effect_date: {
-    type: Date,
-  },
-  inv_no: {
     type: String,
   },
   driver: {
@@ -114,8 +110,9 @@ const ResaSchema = new mongoose.Schema({
   pickup_time: {
     type: String,
   },
-  type_vehicle: {
-    type: String,
+  last_update: {
+    type: Date,
+    default: Date.now(),
   },
   date: {
     type: Date,

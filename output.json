@@ -1,3736 +1,524 @@
 {
-  "Service": [
+  "Hotel": [
     [
-      "BEACH Private Transfer per vehicle",
-      63,
-      null,
-      "USD"
+      "From & TO",
+      "Hotel Region"
     ],
     [
-      "Intra city Private Transfer per vehicle",
-      23,
-      null,
-      "USD"
+      "6 DEGREES SOUTH",
+      "Intra City"
     ],
     [
-      "BEACH HOTELS",
-      15,
-      7.5,
-      "USD"
+      "AHG DREAM'S BAY BEACH HOTEL",
+      "North"
     ],
     [
-      "Intra City",
-      8,
-      4,
-      "USD"
+      "AHG SUN BAY MLILILE BEACH HOTEL",
+      "North East"
     ],
     [
-      "PRC COLLECT BY GUIDE FOR CLIENTS",
-      40
+      "AHG WARIDI BEACH RESORT & SPA",
+      "North East"
     ],
     [
-      "PRC TEST 2 WAY TRANSFER BEACH HOTELS",
-      126
+      "AIRPORT KILIMANJARO",
+      "Tanzania"
     ],
     [
-      "PCR &VISIT OF TOWN WITH GUIDE",
-      160,
-      120
+      "AIRPORT ZANZIBAR",
+      "Intra City"
     ],
     [
-      "Nungwi Visit : Aquarium + beach from 14h00 to 18h30pm",
-      50,
-      30
+      "BADOLINA BUNGALOWS",
+      "North"
     ],
     [
-      "Full day car rental with a driver with french guide",
-      240,
-      120,
-      "USD"
+      "BALADIN ZANZIBAR BEACH HOTEL",
+      "South East"
     ],
     [
-      "safari Blue lookea",
-      null,
-      null,
-      "USD"
+      "BARAZA RESORT AND SPA ZANZIBAR",
+      "South East"
     ],
     [
-      "Dolphin Kizimkazi excl lunch",
-      80,
-      40,
-      "USD"
+      "BAWE ISLAND",
+      "Intra City"
     ],
     [
-      "Josani & dauphin",
-      96,
-      48,
-      "USD"
+      "BEYT AL SALAAM",
+      "Intra City"
     ],
     [
-      "Stone Town & Josani full day",
-      91,
-      45.5,
-      "USD"
+      "BLUE MOON RESORT",
+      "South East"
     ],
     [
-      "Josani & Muyuni & transfert Rock Resto excl lunch",
-      104,
-      52,
-      "USD"
+      "BLUEBAY BEACH RESORT & SPA",
+      "North East"
     ],
     [
-      "Josani & Muyuni excl lunch",
-      93,
-      46.5,
-      "USD"
+      "BREEZES BEACH CLUB & SPA ZANZIBAR",
+      "South East"
     ],
     [
-      "Stone Town & prison island",
-      92,
-      46,
-      "USD"
+      "CASA BEACH HOTEL",
+      "South East"
     ],
     [
-      "Prison Island, sandbank & Snorkling escapade boat",
-      76,
-      38,
-      "USD"
+      "CHIKACHIKA BEACH B&B",
+      "North"
     ],
     [
-      "Swahili Cuisine",
-      68,
-      34,
-      "USD"
+      "CHUMBE ISLAND",
+      "Intra City"
     ],
     [
-      "Stone Town & Spice Tour",
-      85,
-      42.5,
-      "USD"
+      "COCCO BELLO NUNGWI",
+      "North"
     ],
     [
-      "Spice Tours",
-      68,
-      34,
-      "USD"
+      "DAR ES SALAAM",
+      "Tanzania"
     ],
     [
-      "STone Town   excl lunch",
-      68,
-      34,
-      "USD"
+      "DHOW INN BOUTIQUE HOTEL ZANZIBAR",
+      "South East"
     ],
     [
-      "Nungwi Visit AQUARIUM BEACH TOURS",
-      50,
-      30,
-      "USD"
+      "DHOW PALACE HOTEL",
+      "Intra City"
     ],
     [
-      "Full day car rental with a driver with french guide",
-      240,
-      120,
-      "USD"
+      "DIAMONDS MAPENZI BEACH",
+      "North East"
     ],
     [
-      "safari Blue lookea",
-      72,
-      36,
-      "USD"
+      "DONGWE CLUB",
+      "South East"
     ],
     [
-      "Dolphin Kizimkazi excl lunch",
-      48,
-      24,
-      "USD"
+      "ESSQUE ZALU ZANZIBAR",
+      "North"
     ],
     [
-      "Josani & dauphin",
-      64,
-      32,
-      "USD"
+      "EXCURSION",
+      "Not applicable"
     ],
     [
-      "Stone Town & Josani full day",
-      60,
-      30,
-      "USD"
+      "F-ZEEN BOUTIQUE HOTEL ZANZIBAR",
+      "North East"
     ],
     [
-      "Josani & Muyuni & transfert Rock Resto excl lunch",
-      80,
-      40,
-      "USD"
+      "FILAO BEACH HOTEL",
+      "North East"
     ],
     [
-      "Josani & Muyuni excl lunch",
-      64,
-      32,
-      "USD"
+      "FRUIT AND SPICE WELLNESS",
+      "South"
     ],
     [
-      "Stone Town & prison island",
-      68,
-      34,
-      "USD"
+      "FUN BEACH HOTEL",
+      "South east"
     ],
     [
-      "Prison Island, sandbank & Snorkling escapade boat",
-      48,
-      24,
-      "USD"
+      "FUNDU LAGOON RESORT",
+      "Pemba Island"
     ],
     [
-      "Swahili Cuisine",
-      44,
-      22,
-      "USD"
+      "GOLD ZANZIBAR",
+      "North"
     ],
     [
-      "Stone Town & Spice Tour",
-      52,
-      26,
-      "USD"
+      "GOLDEN TULIP STONETOWN BOUTIQUE",
+      "Intra City"
     ],
     [
-      "Spice Tours",
-      48,
-      24,
-      "USD"
+      "GOLDEN TULIP ZANZIBAR AIRPORT",
+      "Intra City"
     ],
     [
-      "STone Town   excl lunch",
-      40,
-      20,
-      "USD"
+      "HILIKI HOUSE",
+      "Intra City"
     ],
     [
-      "Exotisme poker promo",
-      56,
-      null,
-      "USD"
+      "HOTEL RIU JAMBO",
+      "North"
     ],
     [
-      "LOOKEA_PRIVATE_TRANSFER 4pax",
-      62,
-      null,
-      "USD"
+      "HOTEL RIU PALACE ZANZIBAR",
+      "North"
     ],
     [
-      "LOOKEA_GROUP_TRANSFER",
-      17,
-      8.5,
-      "USD"
+      "INDIGO BEACH ZANZIBAR",
+      "South East"
     ],
     [
-      "VIP Prado Intra City",
-      31,
-      null,
-      "USD"
+      "JAFFERJI HOUSE",
+      "Intra City"
     ],
     [
-      "Minibus North North East South",
-      88
+      "KAE BEACH RESORT",
+      "South East"
     ],
     [
-      "VIP Prado North-south-North East",
-      95,
-      null,
-      "USD"
+      "KARAFUU BEACH RESORT AND SPA",
+      "South East"
     ],
     [
-      "Car North West",
-      42,
-      null,
-      "USD"
+      "KASHA BOUTIQUE HOTEL",
+      "North East"
     ],
     [
-      "Car North-North East - South",
-      62,
-      0,
-      "USD"
+      "KENDWA ROCKS BEACH HOTEL",
+      "North"
     ],
     [
-      "Car Intra City - intra City",
-      23,
-      0,
-      "USD"
+      "KHOLLE HOUSE",
+      "Intra City"
     ],
     [
-      "Saadani River Lodge and Park Hyatt 5 days & 4 nights ",
-      1621,
-      null,
-      "USD"
+      "KILINDI ZANZIBAR",
+      "North"
     ],
     [
-      "Saadani River Lodge and Park Hyatt 4 days & 3 nights ",
-      1285,
-      null,
-      "USD"
+      "KISIWA HOUSE",
+      "Intra City"
     ],
     [
-      "Saadani + Double Tree Stone Town 5 days & 4 nights  Classic Banda 3RD adults sharing",
-      null,
-      null,
-      "USD"
+      "KIWENGWA BEACH RESORT",
+      "North East"
     ],
     [
-      "Saadani + Double Tree Stone Town 5 days & 4 nights  Classic Banda KIDS sharing",
-      "n/a",
-      null,
-      "USD"
+      "KONOKONO BEACH RESORT",
+      "South East"
     ],
     [
-      "Saadani + Double Tree Stone Town 5 days & 4 nights  Maridadi SUITE",
-      1445,
-      null,
-      "USD"
+      "LA LUNA SUITE APARTMENTS",
+      "South East"
     ],
     [
-      "Saadani + Double Tree Stone Town 5 days & 4 nights  Classic Banda SINGLE",
-      1816,
-      null,
-      "USD"
+      "LUX MARIJANI",
+      "North East"
     ],
     [
-      "Saadani + Double Tree Stone Town 5 days & 4 nights  Classic Banda",
-      1290,
-      null,
-      "USD"
+      "MARU MARU HOTEL",
+      "Intra City"
     ],
     [
-      "Saadani Safari Lodge and Park Hyatt 5 days & 4 nights Maridadi Suite  Child",
-      888,
-      null,
-      "USD"
+      "MELIA ZANZIBAR",
+      "North East"
     ],
     [
-      "Saadani Safari Lodge and Park Hyatt 5 days & 4 nights Maridadi Suite  with 3RD adult",
-      1313,
-      null,
-      "USD"
+      "MICHAMVI SUNSET BAY RESORT",
+      "South East"
     ],
     [
-      "Saadani Safari Lodge and Park Hyatt 5 days & 4 nights Maridadi SUITE",
-      1545,
-      null,
-      "USD"
+      "MWEZI BOUTIQUE RESORT",
+      "South East"
     ],
     [
-      "Saadani Safari Lodge and Park Hyatt 5 days & 4 nights CHILD SHARING  2 adults Classic banda",
-      810,
-      null,
-      "USD"
+      "MY BLUE HOTEL",
+      "North"
     ],
     [
-      "Saadani Safari Lodge and Park Hyatt 5 days & 4 nights Classic Banda SINGLE",
-      1950,
-      null,
-      "USD"
+      "NEPTUNE PWANI BEACH RESORT & SPA",
+      "North East"
     ],
     [
-      "Saadani Safari Lodge and Park Hyatt 5 days & 4 nights Classic Banda",
-      1390,
-      null,
-      "USD"
+      "NEST STYLE BEACH HOTEL ZANZIBAR",
+      "South"
     ],
     [
-      "Saadani 3days/2nights  3rd adult (Maridadi Suite, 2+1)",
-      1041,
-      null,
-      "USD"
+      "NEXT PARADISE BOUTIQUE RESORT",
+      "North East"
     ],
     [
-      "Saadani 3days/2night Maridadi Suite Child",
-      688,
-      null,
-      "USD"
+      "NUNGWI BEACH RESORT BY TURACO",
+      "North"
     ],
     [
-      "Saadani 3days/2nights  Maridadi Suite single suppl",
-      1565,
-      null,
-      "USD"
+      "NUNGWI DREAMS BY MANTIS",
+      "North"
     ],
     [
-      "Saadani 3days/2nights  Maridadi Suite",
-      1225,
-      null,
-      "USD"
+      "NUR BEACH HOTEL",
+      "South East"
     ],
     [
-      "Saadani 3days/2nights  per child (Classic Banda, 2+1)",
-      610,
-      null,
-      "USD"
+      "OLEZA BOUTIQUE HOTEL",
+      "South East"
     ],
     [
-      "Saadani 3days/2night Classic Banda single suppl",
-      1410,
-      null,
-      "USD"
+      "OCEAN PANORAMA LODGE",
+      "Pemba Island"
     ],
     [
-      "Saadani 3days/2nights Classic Banda",
-      1070,
-      null,
-      "USD"
+      "OCEAN PARADISE RESORT & SPA",
+      "North East"
     ],
     [
-      "Saadani 2days/1night 3rd adult (Maridadi Suite, 2+1)",
-      652,
-      null,
-      "USD"
+      "PALUMBO KENDWA",
+      "North"
     ],
     [
-      "Saadani 2days/1night Maridadi Suite Child",
-      499,
-      null,
-      "USD"
+      "PALUMBO MNEMBA VIEW",
+      "North East"
     ],
     [
-      "Saadani 2days/1night Maridadi Suite single suppl",
-      972,
-      null,
-      "USD"
+      "PALUMBO WAVES",
+      "North"
     ],
     [
-      "Saadani 2days/1night Maridadi Suite",
-      767,
-      null,
-      "USD"
+      "PARADISE BEACH RESORT",
+      "North"
     ],
     [
-      "Saadani 2days/1night per child (Classic Banda, 2+1)",
-      460,
-      null,
-      "USD"
+      "PARK HYATT ZANZIBAR",
+      "Intra City"
     ],
     [
-      "Saadani 2days/1night Classic Banda single suppl",
-      895,
-      null,
-      "USD"
+      "PASSION BOUTIQUE HOTEL ZANZIBAR",
+      "South East"
     ],
     [
-      "Saadani 2days/1night Classic Banda",
-      690,
-      null,
-      "USD"
+      "PEARL BEACH BY SANSI",
+      "South East"
     ],
     [
-      "South East Hotels_15.7",
-      123,
-      61.5,
-      "USD"
+      "PORT FERRY",
+      "Intra City"
     ],
     [
-      "South Hotels_15.6",
-      123,
-      61.5,
-      "USD"
+      "REEF & BEACH RESORT",
+      "South East"
     ],
     [
-      "North East Hotels_15.5",
-      120,
-      60,
-      "USD"
+      "ROYAL ZANZIBAR BEACH RESORT",
+      "North"
     ],
     [
-      "North Hotels_15.4",
-      123,
-      61.5,
-      "USD"
+      "S&S HOTEL",
+      "South East"
     ],
     [
-      "South West Hotels_15.3",
-      89,
-      44.5,
-      "USD"
+      "SAADANI",
+      "Tanzania"
     ],
     [
-      "North West Hotels_15.2",
-      76,
-      38,
-      "USD"
+      "SAFARI GRAND PARC",
+      "Tanzania"
     ],
     [
-      "Intra City_15.1",
-      74,
-      37,
-      "USD"
+      "SAFAYA LUXURY VILLAS",
+      "North"
     ],
     [
-      "CHUMBE_ISLAND_full_day_tour",
-      180,
-      120
+      "SANDIES BAOBAB BEACH",
+      "North"
     ],
     [
-      "FAST TRACK SERVICE AIRPORT",
-      30,
-      30
+      "SANSI KENDWA BEACH RESORT",
+      "North"
     ],
     [
-      "SUNSET_CRUISE_AFTERNOON_NAKUPENDA",
-      40,
-      0,
-      "USD"
+      "SBH KILINDINI RESORT",
+      "North East"
     ],
     [
-      "Noah half day Hire",
-      90,
-      null,
-      "USD"
+      "SBH MONICA ZANZIBAR",
+      "South East"
     ],
     [
-      "VIP Prado or BWM Half day hire",
-      140,
-      null,
-      "USD"
+      "SEA CLIFF RESORT & SPA",
+      "North West"
     ],
     [
-      "BUS 20 seater full day",
-      280,
-      null,
-      "USD"
+      "SELOUS",
+      "Tanzania"
     ],
     [
-      "Noah Full day Hire",
-      170,
-      0,
-      "USD"
+      "SENSATIONS ECO-CHIC HOTEL",
+      "North East"
     ],
     [
-      "VIP Prado or BWM full day hire",
-      280,
-      0,
-      "USD"
+      "SHABA BOUTIQUE HOTEL",
+      "Intra City"
     ],
     [
-      "Prison Island, sandbank & Snorkling escapade boat",
-      20,
-      10,
-      "USD"
+      "SHARAZAD BOUTIQUE HOTEL",
+      "South East"
     ],
     [
-      "Boat Trip Sundowner - 1hr",
-      60,
-      null,
-      "USD"
+      "SHARAZAD WONDERS BOUTIQUE HOTEL",
+      "Intra City"
     ],
     [
-      "FISHING GROUP catamaran",
-      1000,
-      500,
-      "USD"
+      "SHOOTING STAR BOUTIQUE HOTEL",
+      "North East"
     ],
     [
-      "FOOD SAFARI - lunch only",
-      40,
-      null,
-      "USD"
+      "SPICE TREE BY TURACO",
+      "Intra City"
     ],
     [
-      "Snorkeling grouped one ocean",
-      45,
-      22.5,
-      "USD"
+      "STONE TOWN",
+      "Intra City"
     ],
     [
-      "Double dive one ocean",
-      375,
-      null,
-      "USD"
+      "SULTAN SANDS ISLAND RESORT",
+      "North East"
     ],
     [
-      "Double dive additional pax one ocean",
-      125,
-      null,
-      "USD"
+      "SUNSHINE BAY HOTEL ZANZIBAR",
+      "North East"
     ],
     [
-      "Single dive additional pax one ocean",
-      83,
-      null,
-      "USD"
+      "SUNSHINE MARINE LODGE",
+      "North East"
     ],
     [
-      "Single dive one ocean",
-      333,
-      null,
-      "USD"
+      "TBA",
+      "Not applicable"
     ],
     [
-      "DEEP SEA FISHING IN NUNGWI",
-      765,
-      382.5,
-      "USD"
+      "TEMBO B&B APARTMENTS",
+      "Intra City"
     ],
     [
-      "BMW First pax Spice Tours with cooking experience",
-      60,
-      30,
-      "USD"
+      "TEMBO HOUSE HOTEL",
+      "Intra City"
     ],
     [
-      "JOZANI FOREST AND MUYUNI VILLAGE + TRANSFER TO THE ROCK - FULL DAY",
-      105,
-      52.5,
-      "USD"
+      "THE AIYANA BEACH RESORT",
+      "Pemba Island"
     ],
     [
-      "First pax Spice Tours with cooking experience",
-      85,
-      42.5,
-      "USD"
+      "THE ISLAND PONGWE LODGE",
+      "North East"
     ],
     [
-      "Spice Tours only",
-      49,
-      24.5,
-      "USD"
+      "THE LOOP BEACH RESORT",
+      "South East"
     ],
     [
-      "Additional pax standby VIPMuyuni village - Seaweed & lunch rock transfer ",
-      55,
-      27.5,
-      "USD"
+      "THE MANOR HOUSE",
+      "Intra City"
     ],
     [
-      "Stone Town & Prison island HYATT",
-      55,
-      27.5,
-      "USD"
+      "THE MORA ZANZIBAR",
+      "North East"
     ],
     [
-      "Stone Town & Spice Tour excl. lunch",
-      58,
-      29,
-      "USD"
+      "THE NEELA BOUTIQUE HOTEL",
+      "Intra City"
     ],
     [
-      "Safari Blue Hyatt",
-      95,
-      47.5,
-      "USD"
+      "THE RESIDENCE ZANZIBAR",
+      "South"
     ],
     [
-      "STONE TOWN & SUNSET CRUISE (13h to 18h)",
-      58,
-      29,
-      "USD"
+      "THE SANDS BEACH RESORT",
+      "South East"
     ],
     [
-      "Sunset cruise with dhow grouped",
-      50,
-      25,
-      "USD"
+      "THE SEYYIDA HOTEL & SPA",
+      "Intra City"
     ],
     [
-      "Sunset cruise with dhow couple 2 pax",
-      220,
-      110,
-      "USD"
+      "THE SWAHILI HOUSE",
+      "Intra City"
     ],
     [
-      "Footstep livingstone",
-      30,
-      15,
-      "USD"
+      "THE ZANZIBARI BOUTIQUE HOTEL",
+      "North"
     ],
     [
-      "STone Town architecture & door excl lunch",
-      25,
-      12.5,
-      "USD"
+      "TIKITAM PALMS BOUTIQUE HOTEL",
+      "North East"
     ],
     [
-      "South East Hotels_39.9",
-      95,
-      95,
-      "USD"
+      "TOA HOTEL & SPA",
+      "North East"
     ],
     [
-      "South Hotels_39.9",
-      95,
-      95,
-      "USD"
+      "TUI BLUE BAHARI ZANZIBAR",
+      "North East"
     ],
     [
-      "North East Hotels_39.9",
-      85,
-      85,
-      "USD"
+      "TULIA ZANZIBAR UNIQUE BEACH RESORT",
+      "North East"
     ],
     [
-      "North Hotels_39.9",
-      95,
-      95,
-      "USD"
+      "UNGUJA LODGE",
+      "South"
     ],
     [
-      "South West Hotels_39.9",
-      58,
-      58,
-      "USD"
+      "UPENDO HOUSE",
+      "Intra City"
     ],
     [
-      "North West Hotels_39.9",
-      58,
-      58,
-      "USD"
+      "UROA BAY BEACH RESORT",
+      "North East"
     ],
     [
-      "Intra City_39.9",
-      31,
-      31,
-      "USD"
+      "UZURI VILLA",
+      "South East"
     ],
     [
-      "South East Hotels_19.9",
-      100,
-      50,
-      "USD"
+      "VILLA KIVA BOUTIQUE HOTEL",
+      "North East"
     ],
     [
-      "South Hotels_19.9",
-      100,
-      50,
-      "USD"
+      "VOI KIWENGWA RESORT",
+      "North East"
     ],
     [
-      "North East Hotels_19.9",
-      97,
-      48.5,
-      "USD"
+      "YCONA LUXURY RESORT",
+      "North East"
     ],
     [
-      "North Hotels_19.9",
-      100,
-      50,
-      "USD"
+      "ZANBLUU BEACH HOTEL",
+      "North East"
     ],
     [
-      "South West Hotels_19.9",
-      78,
-      39,
-      "USD"
+      "ZANZIBAR BAY RESORT & SPA",
+      "North East"
     ],
     [
-      "North West Hotels_19.9",
-      64,
-      32,
-      "USD"
+      "ZANZIBAR COFFEE HOUSE",
+      "Intra City"
     ],
     [
-      "Intra City_19.9",
-      62,
-      31,
-      "USD"
+      "ZANZIBAR PEARL BOUTIQUE HOTEL & VILLAS",
+      "North East"
     ],
     [
-      "Family Villas (4pax) low",
-      120,
-      60,
-      "USD"
+      "ZANZIBAR QUEEN HOTEL",
+      "North East"
     ],
     [
-      "Family Villas (4pax) high",
-      150,
-      75,
-      "USD"
+      "ZANZIBAR SERENA HOTEL",
+      "Intra City"
     ],
     [
-      "Family Villas (4pax) peak",
-      157.5,
-      78.75,
-      "USD"
+      "ZANZIBAR WHITE SAND LUXURY VILLAS & SPA",
+      "South East"
     ],
     [
-      "Garden Villas (2 pax) low",
-      150,
-      75,
-      "USD"
+      "ZANZIBLUE",
+      "North East"
     ],
     [
-      "Garden Villas (2 pax) high",
-      205,
-      102.5,
-      "USD"
+      "ZAWADI HOTEL ZANZIBAR",
+      "South East"
     ],
     [
-      "Garden Villas (2 pax) peak",
-      225,
-      112.5,
-      "USD"
+      "ZOI BOUTIQUE HOTEL ZANZIBAR",
+      "North East"
     ],
     [
-      "Sea view Villas (2pax) Low season",
-      180,
-      90,
-      "USD"
-    ],
-    [
-      "Sea view Villas (2pax) High season",
-      230,
-      115,
-      "USD"
-    ],
-    [
-      "Sea view Villas (2pax) Peak season",
-      255,
-      127.5,
-      "USD"
-    ],
-    [
-      "double rooms with separate but private bathrooms BB",
-      32.5,
-      32.5,
-      "USD"
-    ],
-    [
-      "Double self-contained room fully air-conditioning BB",
-      42.5,
-      42.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_0.4",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "South Hotels_0.4",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "North East Hotels_0.4",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "North Hotels_0.4",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "South West Hotels_0.4",
-      110,
-      55,
-      "USD"
-    ],
-    [
-      "North West Hotels_0.4",
-      105,
-      52.5,
-      "USD"
-    ],
-    [
-      "Intra City_0.4",
-      98,
-      49,
-      "USD"
-    ],
-    [
-      "Single supplement",
-      "30% rack",
-      null,
-      "USD"
-    ],
-    [
-      "Extra person 3d",
-      80,
-      80,
-      "USD"
-    ],
-    [
-      "superior deluxe suites bb",
-      167.5,
-      80,
-      "USD"
-    ],
-    [
-      "2nd superior SUITES BB 22.1",
-      117.5,
-      80,
-      "USD"
-    ],
-    [
-      "1ST Signature SUITES  BB 22.1",
-      78,
-      80,
-      "USD"
-    ],
-    [
-      "Big Game Fishing FULL day SOUTH SOUTH EAST",
-      1000
-    ],
-    [
-      "Big Game Fishing half day SOUTH SOUTH EAST",
-      726
-    ],
-    [
-      "Big Game Fishing half day SOUTH SOUTH EAST",
-      800
-    ],
-    [
-      "South East Hotels_102",
-      95,
-      null,
-      "USD"
-    ],
-    [
-      "South Hotels_102",
-      95,
-      null,
-      "USD"
-    ],
-    [
-      "North East Hotels_102",
-      95,
-      null,
-      "USD"
-    ],
-    [
-      "North Hotels_102",
-      95,
-      null,
-      "USD"
-    ],
-    [
-      "South West Hotels_102",
-      46,
-      null,
-      "USD"
-    ],
-    [
-      "North West Hotels_102",
-      46,
-      78,
-      "USD"
-    ],
-    [
-      "Intra City_102",
-      32,
-      44,
-      "USD"
-    ],
-    [
-      "South East Hotels_101",
-      28.42,
-      28,
-      "USD"
-    ],
-    [
-      "South Hotels_101",
-      28.42,
-      28,
-      "USD"
-    ],
-    [
-      "North East Hotels_101",
-      24.5,
-      25,
-      "USD"
-    ],
-    [
-      "North Hotels_101",
-      24.5,
-      27,
-      "USD"
-    ],
-    [
-      "South West Hotels_101",
-      21.56,
-      22,
-      "USD"
-    ],
-    [
-      "North West Hotels_101",
-      17.64,
-      18,
-      "USD"
-    ],
-    [
-      "Intra City_101",
-      9.8,
-      10,
-      "USD"
-    ],
-    [
-      "South East Hotels_0.7",
-      160,
-      80,
-      "USD"
-    ],
-    [
-      "South Hotels_0.6",
-      185,
-      92.5,
-      "USD"
-    ],
-    [
-      "North East Hotels_0.5",
-      185,
-      92.5,
-      "USD"
-    ],
-    [
-      "North Hotels_0.4",
-      185,
-      92.5,
-      "USD"
-    ],
-    [
-      "South West Hotels_0.3",
-      185,
-      92.5,
-      "USD"
-    ],
-    [
-      "North West Hotels_0.2",
-      185,
-      92.5,
-      "USD"
-    ],
-    [
-      "Intra City_0.1",
-      185,
-      92.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_",
-      91,
-      45.5,
-      "USD"
-    ],
-    [
-      "South Hotels_",
-      91,
-      45.5,
-      "USD"
-    ],
-    [
-      "North East Hotels_",
-      91,
-      45.5,
-      "USD"
-    ],
-    [
-      "North Hotels_",
-      91,
-      45.5,
-      "USD"
-    ],
-    [
-      "South West Hotels_",
-      76,
-      38,
-      "USD"
-    ],
-    [
-      "North West Hotels_",
-      63,
-      31.5,
-      "USD"
-    ],
-    [
-      "Intra City_",
-      34,
-      17,
-      "USD"
-    ],
-    [
-      "South East Hotels_",
-      100,
-      50,
-      "USD"
-    ],
-    [
-      "South Hotels_",
-      100,
-      50,
-      "USD"
-    ],
-    [
-      "North East Hotels_",
-      95,
-      47.5,
-      "USD"
-    ],
-    [
-      "North Hotels_",
-      100,
-      50,
-      "USD"
-    ],
-    [
-      "South West Hotels_",
-      86,
-      43,
-      "USD"
-    ],
-    [
-      "North West Hotels_",
-      72,
-      36,
-      "USD"
-    ],
-    [
-      "Intra City_",
-      38,
-      19,
-      "USD"
-    ],
-    [
-      "Private plane 5 seater ZNZ/DAR",
-      855
-    ],
-    [
-      "Private Plane transfer 13seater ZNZ/Dar",
-      1155
-    ],
-    [
-      "Private boat transfer DAR/ZNZ",
-      1400
-    ],
-    [
-      "Mapenzi deluxe room resident rate",
-      132
-    ],
-    [
-      "Mapenzi garden room resident rate",
-      102
-    ],
-    [
-      "Mapenzi superior room resident rate",
-      112
-    ],
-    [
-      "AIRPORT ASSISTANCE GROUP",
-      150
-    ],
-    [
-      "FORODHANI BB 22.3",
-      164,
-      26,
-      "USD"
-    ],
-    [
-      "SHANGANI room BB 22.2",
-      141.5,
-      26,
-      "USD"
-    ],
-    [
-      "DARAJANI  room BB 22.1      ",
-      107.5,
-      26,
-      "USD"
-    ],
-    [
-      "Extra bed supplement (third adult person) 23.5",
-      56,
-      null,
-      "USD"
-    ],
-    [
-      "HB supplement 23.4",
-      40,
-      20,
-      "USD"
-    ],
-    [
-      "FORODHANI room23.3",
-      217.5,
-      26,
-      "USD"
-    ],
-    [
-      "SHANGANI room BB 23.2",
-      207.4,
-      26,
-      "USD"
-    ],
-    [
-      "DARAJANI  room BB  23.1    ",
-      157,
-      26,
-      "USD"
-    ],
-    [
-      "South East Hotels21.1",
-      108,
-      54,
-      "USD"
-    ],
-    [
-      "South Hotels 21.1",
-      108,
-      54,
-      "USD"
-    ],
-    [
-      "North East Hotels 21.1",
-      122,
-      61,
-      "USD"
-    ],
-    [
-      "North Hotels 21.1",
-      126,
-      63,
-      "USD"
-    ],
-    [
-      "South West Hotels 21.1",
-      118,
-      59,
-      "USD"
-    ],
-    [
-      "North West Hotels 21.1",
-      108,
-      54,
-      "USD"
-    ],
-    [
-      "Intra City 21.1",
-      94,
-      47,
-      "USD"
-    ],
-    [
-      "South East Hotels 20.1",
-      99,
-      49.5,
-      "USD"
-    ],
-    [
-      "South Hotels 20.1",
-      99,
-      49.5,
-      "USD"
-    ],
-    [
-      "North East Hotels 20.1",
-      111,
-      55.5,
-      "USD"
-    ],
-    [
-      "North Hotels 20.1",
-      115,
-      57.5,
-      "USD"
-    ],
-    [
-      "South West Hotels 20.1",
-      118,
-      59,
-      "USD"
-    ],
-    [
-      "North West Hotels 20.1",
-      114,
-      57,
-      "USD"
-    ],
-    [
-      "Intra City 20.1",
-      87,
-      43.5,
-      "USD"
-    ],
-    [
-      "South East Hotels 19.1",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "South Hotels 19.1",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "North East Hotels 19.1",
-      115,
-      57.5,
-      "USD"
-    ],
-    [
-      "North Hotels 19.1",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "South West Hotels 19.1",
-      102,
-      51,
-      "USD"
-    ],
-    [
-      "North West Hotels 19.1",
-      88,
-      44,
-      "USD"
-    ],
-    [
-      "Intra City 19.1",
-      64,
-      32,
-      "USD"
-    ],
-    [
-      "South East Hotels 18.1",
-      110,
-      55,
-      "USD"
-    ],
-    [
-      "South Hotels 18.1",
-      110,
-      55,
-      "USD"
-    ],
-    [
-      "North East Hotels 18.1",
-      106,
-      53,
-      "USD"
-    ],
-    [
-      "North Hotels 18.1",
-      110,
-      55,
-      "USD"
-    ],
-    [
-      "South West Hotels 18.1",
-      94,
-      47,
-      "USD"
-    ],
-    [
-      "North West Hotels 18.1",
-      81,
-      40.5,
-      "USD"
-    ],
-    [
-      "Intra City 18.1",
-      59,
-      29.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_17.1",
-      118,
-      59,
-      "USD"
-    ],
-    [
-      "South Hotels 17.1",
-      118,
-      59,
-      "USD"
-    ],
-    [
-      "North East Hotels 17.1",
-      114,
-      57,
-      "USD"
-    ],
-    [
-      "North Hotels 17.1",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "South West Hotels 17.1",
-      124,
-      62,
-      "USD"
-    ],
-    [
-      "North West Hotels 17.1",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "Intra City 17.1",
-      68,
-      34,
-      "USD"
-    ],
-    [
-      "South East Hotels_10.1",
-      109,
-      54.5,
-      "USD"
-    ],
-    [
-      "South Hotels ",
-      109,
-      54.5,
-      "USD"
-    ],
-    [
-      "North East Hotels ",
-      104,
-      52,
-      "USD"
-    ],
-    [
-      "North Hotels ",
-      109,
-      54.5,
-      "USD"
-    ],
-    [
-      "South West Hotels ",
-      113,
-      56.5,
-      "USD"
-    ],
-    [
-      "North West Hotels ",
-      110,
-      55,
-      "USD"
-    ],
-    [
-      "Intra City ",
-      85,
-      42.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_10.1",
-      121,
-      60.5,
-      "USD"
-    ],
-    [
-      "South Hotels_10.1",
-      121,
-      60.5,
-      "USD"
-    ],
-    [
-      "North East Hotels_10.1",
-      112,
-      56,
-      "USD"
-    ],
-    [
-      "North Hotels_10.1",
-      121,
-      60.5,
-      "USD"
-    ],
-    [
-      "South West Hotels_10.1",
-      96,
-      48,
-      "USD"
-    ],
-    [
-      "North West Hotels_10.1",
-      83,
-      41.5,
-      "USD"
-    ],
-    [
-      "Intra City_10.1",
-      55,
-      27.5,
-      "USD"
-    ],
-    [
-      "Dolphin Kizimkazi excl lunch",
-      65,
-      32.5,
-      "USD"
-    ],
-    [
-      "Full day Sand bank & prison Island",
-      106,
-      53,
-      "USD"
-    ],
-    [
-      "Josani & Muyuni excl lunch",
-      65,
-      32.5,
-      "USD"
-    ],
-    [
-      "Spice Tours Excl lunch",
-      48,
-      24,
-      "USD"
-    ],
-    [
-      "Stone Town Visit excl lunch",
-      45,
-      22.5,
-      "USD"
-    ],
-    [
-      "Full day Stone Town & Spice tour with Lunch",
-      90,
-      45,
-      "USD"
-    ],
-    [
-      "FULL Day Stone Town & Spice tour Excl Lunch",
-      67,
-      33.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_16.7",
-      108,
-      54,
-      "USD"
-    ],
-    [
-      "South Hotels_16.6",
-      108,
-      54,
-      "USD"
-    ],
-    [
-      "North East Hotels_16.5",
-      106,
-      53,
-      "USD"
-    ],
-    [
-      "North Hotels_16.4",
-      108,
-      54,
-      "USD"
-    ],
-    [
-      "South West Hotels_16.3",
-      84,
-      42,
-      "USD"
-    ],
-    [
-      "North West Hotels_16.2",
-      69,
-      34.5,
-      "USD"
-    ],
-    [
-      "Intra City_16.1",
-      68,
-      34,
-      "USD"
-    ],
-    [
-      "South East Hotels_15.7",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "South Hotels_15.6",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "North East Hotels_15.5",
-      115,
-      57.5,
-      "USD"
-    ],
-    [
-      "North Hotels_15.4",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "South West Hotels_15.3",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "North West Hotels_15.2",
-      85,
-      42.5,
-      "USD"
-    ],
-    [
-      "Intra City_15.1",
-      64,
-      32,
-      "USD"
-    ],
-    [
-      "All inclusive supplement",
-      103,
-      51.5,
-      "USD"
-    ],
-    [
-      "Resident rate Extra nightHB ",
-      185,
-      74,
-      "USD"
-    ],
-    [
-      "Garden  Rate HB",
-      185.5,
-      74,
-      "USD"
-    ],
-    [
-      "SEAVIEW  RateHB ",
-      244,
-      74,
-      "USD"
-    ],
-    [
-      "SELOUS 1 nights Serena RIVER Lodge from town",
-      989,
-      760,
-      "USD"
-    ],
-    [
-      "SELOUS 3 nights Serena RIVER lodge",
-      1886,
-      1200,
-      "USD"
-    ],
-    [
-      "SELOUS 2 nights Serena RIVER Lodge",
-      1439,
-      950,
-      "USD"
-    ],
-    [
-      "SELOUS 1 nights Serena Camp from Town",
-      874,
-      750,
-      "USD"
-    ],
-    [
-      "SELOUS 3 nights Serena Camp from Town",
-      1534,
-      1090,
-      "USD"
-    ],
-    [
-      "SELOUS 2 nights Serena Camp from Town",
-      1212,
-      890,
-      "USD"
-    ],
-    [
-      "ROCK full day from north",
-      170,
-      null,
-      "USD"
-    ],
-    [
-      "Depart from ST.  PRISON Island & Spice Tours excl. lunch",
-      62,
-      62,
-      "USD"
-    ],
-    [
-      "GROUP STONE TOWN & FOOD SAFARI COOKING",
-      88,
-      null,
-      "USD"
-    ],
-    [
-      "GROUPJosani & spice tour for half day",
-      38,
-      null,
-      "USD"
-    ],
-    [
-      "Stone Town & Prison island",
-      108,
-      54,
-      "USD"
-    ],
-    [
-      "Stone Town & Spice Tour",
-      108,
-      54,
-      "USD"
-    ],
-    [
-      "STONE TOWN & Josnai Muyuni full day",
-      116,
-      58,
-      "USD"
-    ],
-    [
-      "3rd pers in room",
-      81,
-      null,
-      "USD"
-    ],
-    [
-      "Blue Breezes Suites",
-      171,
-      null,
-      "USD"
-    ],
-    [
-      "Panorama Suites High Season",
-      172,
-      null,
-      "USD"
-    ],
-    [
-      "Blue Wave Suite High Season",
-      145,
-      null,
-      "USD"
-    ],
-    [
-      "SUNSHINE SUITE High Season",
-      133,
-      null,
-      "USD"
-    ],
-    [
-      "STONE TOWN 1/2day Residence South",
-      81,
-      40.5,
-      "USD"
-    ],
-    [
-      "SELOUS 2 nights Serena",
-      1200,
-      850,
-      "USD"
-    ],
-    [
-      "JOSANI-MUYUNI 1/2Residence",
-      91,
-      45.5,
-      "USD"
-    ],
-    [
-      "SPICE TOUR 1/2day Gold North",
-      88,
-      44,
-      "USD"
-    ],
-    [
-      "SPICE TOUR 1/2day ESSQUE ZALU North",
-      88,
-      44,
-      "USD"
-    ],
-    [
-      "STONE TOWN 1/2day Melia N.East",
-      81,
-      40.5,
-      "USD"
-    ],
-    [
-      "Airport-north",
-      56,
-      null,
-      "USD"
-    ],
-    [
-      "Airport-Gold",
-      56,
-      null,
-      "USD"
-    ],
-    [
-      "Airport- Jambiani Bweju",
-      57,
-      null,
-      "USD"
-    ],
-    [
-      "Airport- The Residence",
-      57,
-      null,
-      "USD"
-    ],
-    [
-      "Airport-Melia",
-      55,
-      null,
-      "USD"
-    ],
-    [
-      "Airport-Essque Zalu",
-      56,
-      null,
-      "USD"
-    ],
-    [
-      "Easter SINGLE  Rate_14.1",
-      145,
-      null,
-      "USD"
-    ],
-    [
-      "Easter resident  Rate_14.1",
-      90,
-      45,
-      "USD"
-    ],
-    [
-      "FESTIVE  Rate_14.1",
-      258,
-      129,
-      "USD"
-    ],
-    [
-      "Extra Luggage-13.4",
-      30,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-13.3",
-      80,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-13.2",
-      80,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-13.1",
-      55,
-      null,
-      "USD"
-    ],
-    [
-      "Car-13",
-      45,
-      null,
-      "USD"
-    ],
-    [
-      "HYATT STAFF",
-      14,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-12.3",
-      130,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-12.2",
-      140,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-12.1",
-      88,
-      null,
-      "USD"
-    ],
-    [
-      "Car-12",
-      55,
-      null,
-      "USD"
-    ],
-    [
-      "All inclusive supplement",
-      103,
-      51.5,
-      "USD"
-    ],
-    [
-      "Resident rate Ocean front FESTIVE period_11.9",
-      334,
-      74,
-      "USD"
-    ],
-    [
-      "Resident rate Extra nightHB_11.8",
-      185,
-      74,
-      "USD"
-    ],
-    [
-      "Contracted  Rate Voucher HB_11.8",
-      149,
-      74,
-      "USD"
-    ],
-    [
-      "SEAVIEW  RateHB_11.8",
-      199,
-      74,
-      "USD"
-    ],
-    [
-      "Festive speacialrates",
-      249.5,
-      74,
-      "USD"
-    ],
-    [
-      "FESTIVE Resident Single Rate_11.7",
-      382,
-      74,
-      "USD"
-    ],
-    [
-      "Resident festiveHB_11.7",
-      235,
-      74,
-      "USD"
-    ],
-    [
-      "Ocean front Luxury_11.6",
-      270.5,
-      135.25,
-      "USD"
-    ],
-    [
-      "Contracted  Rate_11.6",
-      382,
-      191,
-      "USD"
-    ],
-    [
-      "extra bed  Rate_11.6",
-      108,
-      74,
-      "USD"
-    ],
-    [
-      "Selling  Rate_11.5",
-      1900,
-      950,
-      "USD"
-    ],
-    [
-      "Contracted  Rate_11.5",
-      1800,
-      900,
-      "USD"
-    ],
-    [
-      "Rack  Rate_11.5",
-      2000,
-      1000,
-      "USD"
-    ],
-    [
-      "Selling  Rate_11.4",
-      700,
-      350,
-      "USD"
-    ],
-    [
-      "Contracted  Rate_11.4",
-      600,
-      300,
-      "USD"
-    ],
-    [
-      "Rack  Rate_11.4",
-      900,
-      450,
-      "USD"
-    ],
-    [
-      "Selling  Rate_11.3",
-      700,
-      350,
-      "USD"
-    ],
-    [
-      "Contracted  Rate_11.3",
-      500,
-      250,
-      "USD"
-    ],
-    [
-      "Rack  Rate_11.3",
-      800,
-      400,
-      "USD"
-    ],
-    [
-      "Selling  Rate_11.2",
-      850,
-      425,
-      "USD"
-    ],
-    [
-      "Contracted  Rate_11.2",
-      750,
-      375,
-      "USD"
-    ],
-    [
-      "Rack  Rate_11.2",
-      1200,
-      600,
-      "USD"
-    ],
-    [
-      "Selling  Rate_11.1",
-      800,
-      400,
-      "USD"
-    ],
-    [
-      "Contracted  Rate_11.1",
-      700,
-      350,
-      "USD"
-    ],
-    [
-      "Rack  Rate_11.1",
-      1000,
-      500,
-      "USD"
-    ],
-    [
-      "South East Hotels_10.1",
-      139,
-      69.5,
-      "USD"
-    ],
-    [
-      "South Hotels_10.1",
-      139,
-      69.5,
-      "USD"
-    ],
-    [
-      "North East Hotels_10.1",
-      135,
-      67.5,
-      "USD"
-    ],
-    [
-      "North Hotels_10.1",
-      145,
-      72.5,
-      "USD"
-    ],
-    [
-      "South West Hotels_10.1",
-      119,
-      59.5,
-      "USD"
-    ],
-    [
-      "North West Hotels_10.1",
-      104,
-      52,
-      "USD"
-    ],
-    [
-      "Intra City_10.1",
-      121,
-      60.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_9.9",
-      109,
-      54.5,
-      "USD"
-    ],
-    [
-      "South Hotels_9.9",
-      109,
-      54.5,
-      "USD"
-    ],
-    [
-      "North East Hotels_9.9",
-      106,
-      53,
-      "USD"
-    ],
-    [
-      "North Hotels_9.9",
-      109,
-      54.5,
-      "USD"
-    ],
-    [
-      "South West Hotels_9.9",
-      90,
-      45,
-      "USD"
-    ],
-    [
-      "North West Hotels_9.9",
-      75,
-      37.5,
-      "USD"
-    ],
-    [
-      "Intra City_9.9",
-      75,
-      37.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_8.8",
-      90,
-      45,
-      "USD"
-    ],
-    [
-      "South Hotels_8.8",
-      90,
-      45,
-      "USD"
-    ],
-    [
-      "North East Hotels_8.8",
-      86,
-      43,
-      "USD"
-    ],
-    [
-      "North Hotels_8.8",
-      90,
-      45,
-      "USD"
-    ],
-    [
-      "South West Hotels_8.8",
-      7,
-      3.5,
-      "USD"
-    ],
-    [
-      "North West Hotels_8.8",
-      55,
-      27.5,
-      "USD"
-    ],
-    [
-      "Intra City_8.8",
-      55,
-      27.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_7.7",
-      1005,
-      502.5,
-      "USD"
-    ],
-    [
-      "South Hotels_7.7",
-      1005,
-      502.5,
-      "USD"
-    ],
-    [
-      "North East Hotels_7.7",
-      1005,
-      502.5,
-      "USD"
-    ],
-    [
-      "North Hotels_7.7",
-      1005,
-      502.5,
-      "USD"
-    ],
-    [
-      "South West Hotels_7.7",
-      1005,
-      502.5,
-      "USD"
-    ],
-    [
-      "North West Hotels_7.7",
-      1005,
-      502.5,
-      "USD"
-    ],
-    [
-      "Intra City_7.7",
-      1005,
-      502.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_6.6",
-      150,
-      75,
-      "USD"
-    ],
-    [
-      "South Hotels_6.6",
-      150,
-      75,
-      "USD"
-    ],
-    [
-      "North East Hotels_6.6",
-      145,
-      72.5,
-      "USD"
-    ],
-    [
-      "North Hotels_6.6",
-      150,
-      75,
-      "USD"
-    ],
-    [
-      "South West Hotels_6.6",
-      118,
-      59,
-      "USD"
-    ],
-    [
-      "North West Hotels_6.6",
-      169,
-      84.5,
-      "USD"
-    ],
-    [
-      "Intra City_6.6",
-      133,
-      66.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_5.5",
-      157,
-      78.5,
-      "USD"
-    ],
-    [
-      "South Hotels_5.5",
-      157,
-      78.5,
-      "USD"
-    ],
-    [
-      "North East Hotels_5.5",
-      149,
-      74.5,
-      "USD"
-    ],
-    [
-      "North Hotels_5.5",
-      158,
-      79,
-      "USD"
-    ],
-    [
-      "South West Hotels_5.5",
-      132,
-      66,
-      "USD"
-    ],
-    [
-      "North West Hotels_5.5",
-      116,
-      58,
-      "USD"
-    ],
-    [
-      "Intra City_5.5",
-      116,
-      58,
-      "USD"
-    ],
-    [
-      "South East Hotels_4.4",
-      150,
-      75,
-      "USD"
-    ],
-    [
-      "South Hotels_4.4",
-      150,
-      75,
-      "USD"
-    ],
-    [
-      "North East Hotels_4.4",
-      139,
-      69.5,
-      "USD"
-    ],
-    [
-      "North Hotels_4.4",
-      150,
-      75,
-      "USD"
-    ],
-    [
-      "South West Hotels_4.4",
-      124,
-      62,
-      "USD"
-    ],
-    [
-      "North West Hotels_4.4",
-      109,
-      54.5,
-      "USD"
-    ],
-    [
-      "Intra City_4.4",
-      109,
-      54.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_3.3",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "South Hotels_3.3",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "North East Hotels_3.3",
-      150,
-      75,
-      "USD"
-    ],
-    [
-      "North Hotels_3.3",
-      150,
-      75,
-      "USD"
-    ],
-    [
-      "South West Hotels_3.3",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "North West Hotels_3.3",
-      120,
-      60,
-      "USD"
-    ],
-    [
-      "Intra City_3.3",
-      100,
-      50,
-      "USD"
-    ],
-    [
-      "South East Hotels_2.2",
-      103,
-      51.5,
-      "USD"
-    ],
-    [
-      "South Hotels_2.2",
-      111,
-      55.5,
-      "USD"
-    ],
-    [
-      "North East Hotels_2.2",
-      116,
-      58,
-      "USD"
-    ],
-    [
-      "North Hotels_2.2",
-      127,
-      63.5,
-      "USD"
-    ],
-    [
-      "South West Hotels_2.2",
-      142,
-      71,
-      "USD"
-    ],
-    [
-      "North West Hotels_2.2",
-      142,
-      71,
-      "USD"
-    ],
-    [
-      "Intra City_2.2",
-      111,
-      55.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_1.1",
-      95,
-      47.5,
-      "USD"
-    ],
-    [
-      "South Hotels_1.1",
-      95,
-      47.5,
-      "USD"
-    ],
-    [
-      "North East Hotels_1.1",
-      86,
-      43,
-      "USD"
-    ],
-    [
-      "North Hotels_1.1",
-      95,
-      47.5,
-      "USD"
-    ],
-    [
-      "South West Hotels_1.1",
-      73,
-      36.5,
-      "USD"
-    ],
-    [
-      "North West Hotels_1.1",
-      58,
-      29,
-      "USD"
-    ],
-    [
-      "Intra City_1.1",
-      32,
-      16,
-      "USD"
-    ],
-    [
-      "South East Hotels_10",
-      128,
-      64,
-      "USD"
-    ],
-    [
-      "South Hotels_10",
-      128,
-      64,
-      "USD"
-    ],
-    [
-      "North East Hotels_10",
-      124,
-      62,
-      "USD"
-    ],
-    [
-      "North Hotels_10",
-      134,
-      67,
-      "USD"
-    ],
-    [
-      "South West Hotels_10",
-      110,
-      55,
-      "USD"
-    ],
-    [
-      "North West Hotels_10",
-      96,
-      48,
-      "USD"
-    ],
-    [
-      "Intra City_10",
-      112,
-      56,
-      "USD"
-    ],
-    [
-      "South East Hotels_9",
-      110,
-      55,
-      "USD"
-    ],
-    [
-      "South Hotels_9",
-      110,
-      55,
-      "USD"
-    ],
-    [
-      "North East Hotels_9",
-      101,
-      50.5,
-      "USD"
-    ],
-    [
-      "North Hotels_9",
-      110,
-      55,
-      "USD"
-    ],
-    [
-      "South West Hotels_9",
-      88,
-      44,
-      "USD"
-    ],
-    [
-      "North West Hotels_9",
-      75,
-      37.5,
-      "USD"
-    ],
-    [
-      "Intra City_9",
-      75,
-      37.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_8",
-      85,
-      42.5,
-      "USD"
-    ],
-    [
-      "South Hotels_8",
-      85,
-      42.5,
-      "USD"
-    ],
-    [
-      "North East Hotels_8",
-      76,
-      38,
-      "USD"
-    ],
-    [
-      "North Hotels_8",
-      85,
-      42.5,
-      "USD"
-    ],
-    [
-      "South West Hotels_8",
-      62,
-      31,
-      "USD"
-    ],
-    [
-      "North West Hotels_8",
-      49,
-      24.5,
-      "USD"
-    ],
-    [
-      "Intra City_8",
-      49,
-      24.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_7",
-      1005,
-      502.5,
-      "USD"
-    ],
-    [
-      "South Hotels_7",
-      1005,
-      800,
-      "USD"
-    ],
-    [
-      "North East Hotels_7",
-      1005,
-      502.5,
-      "USD"
-    ],
-    [
-      "North Hotels_7",
-      1005,
-      502.5,
-      "USD"
-    ],
-    [
-      "South West Hotels_7",
-      995,
-      497.5,
-      "USD"
-    ],
-    [
-      "North West Hotels_7",
-      995,
-      497.5,
-      "USD"
-    ],
-    [
-      "Intra City_7",
-      985,
-      492.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_6",
-      154,
-      77,
-      "USD"
-    ],
-    [
-      "South Hotels_6",
-      154,
-      77,
-      "USD"
-    ],
-    [
-      "North East Hotels_6",
-      148,
-      74,
-      "USD"
-    ],
-    [
-      "North Hotels_6",
-      154,
-      77,
-      "USD"
-    ],
-    [
-      "South West Hotels_6",
-      115,
-      57.5,
-      "USD"
-    ],
-    [
-      "North West Hotels_6",
-      160,
-      80,
-      "USD"
-    ],
-    [
-      "Intra City_6",
-      129,
-      64.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_5",
-      141,
-      70.5,
-      "USD"
-    ],
-    [
-      "South Hotels_5",
-      141,
-      70.5,
-      "USD"
-    ],
-    [
-      "North East Hotels_5",
-      136,
-      68,
-      "USD"
-    ],
-    [
-      "North Hotels_5",
-      141,
-      70.5,
-      "USD"
-    ],
-    [
-      "South West Hotels_5",
-      122,
-      61,
-      "USD"
-    ],
-    [
-      "North West Hotels_5",
-      105,
-      52.5,
-      "USD"
-    ],
-    [
-      "Intra City_5",
-      105,
-      52.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_4",
-      138,
-      69,
-      "USD"
-    ],
-    [
-      "South Hotels_4",
-      138,
-      69,
-      "USD"
-    ],
-    [
-      "North East Hotels_4",
-      129,
-      64.5,
-      "USD"
-    ],
-    [
-      "North Hotels_4",
-      138,
-      69,
-      "USD"
-    ],
-    [
-      "South West Hotels_4",
-      114,
-      57,
-      "USD"
-    ],
-    [
-      "North West Hotels_4",
-      100,
-      50,
-      "USD"
-    ],
-    [
-      "Intra City_4",
-      100,
-      50,
-      "USD"
-    ],
-    [
-      "South East Hotels_3",
-      100,
-      50,
-      "USD"
-    ],
-    [
-      "South Hotels_3",
-      100,
-      50,
-      "USD"
-    ],
-    [
-      "North East Hotels_3",
-      134,
-      67,
-      "USD"
-    ],
-    [
-      "North Hotels_3",
-      134,
-      67,
-      "USD"
-    ],
-    [
-      "South West Hotels_3",
-      128,
-      64,
-      "USD"
-    ],
-    [
-      "North West Hotels_3",
-      132,
-      66,
-      "USD"
-    ],
-    [
-      "Intra City_3",
-      104,
-      52,
-      "USD"
-    ],
-    [
-      "South East Hotels_2",
-      105,
-      52.5,
-      "USD"
-    ],
-    [
-      "South Hotels_2",
-      105,
-      52.5,
-      "USD"
-    ],
-    [
-      "North East Hotels_2",
-      110,
-      55,
-      "USD"
-    ],
-    [
-      "North Hotels_2",
-      113,
-      56.5,
-      "USD"
-    ],
-    [
-      "South West Hotels_2",
-      132,
-      66,
-      "USD"
-    ],
-    [
-      "North West Hotels_2",
-      105,
-      52.5,
-      "USD"
-    ],
-    [
-      "Intra City_2",
-      105,
-      52.5,
-      "USD"
-    ],
-    [
-      "South East Hotels_1",
-      93,
-      46.5,
-      "USD"
-    ],
-    [
-      "South Hotels_1",
-      93,
-      46.5,
-      "USD"
-    ],
-    [
-      "North East Hotels_1",
-      83,
-      41.5,
-      "USD"
-    ],
-    [
-      "North Hotels_1",
-      93,
-      46.5,
-      "USD"
-    ],
-    [
-      "South West Hotels_1",
-      69,
-      34.5,
-      "USD"
-    ],
-    [
-      "North West Hotels_1",
-      55,
-      27.5,
-      "USD"
-    ],
-    [
-      "Intra City_1",
-      30,
-      15,
-      "USD"
-    ],
-    [
-      "Extra Luggage-6.4",
-      78,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-6.4",
-      127,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-6.4",
-      185,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-6.4",
-      126,
-      null,
-      "USD"
-    ],
-    [
-      "Car-6.4",
-      90,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-6.3",
-      0,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-6.3",
-      142,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-6.3",
-      191,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-6.3",
-      151,
-      null,
-      "USD"
-    ],
-    [
-      "Car-6.3",
-      108,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-6.2",
-      0,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-6.2",
-      93,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-6.2",
-      143,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-6.2",
-      94,
-      null,
-      "USD"
-    ],
-    [
-      "Car-6.2",
-      67,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-6.1",
-      0,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-6.1",
-      88,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-6.1",
-      132,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-6.1",
-      88,
-      null,
-      "USD"
-    ],
-    [
-      "Car-6.1",
-      63,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-5.3",
-      91,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-5.3",
-      142,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-5.3",
-      185,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-5.3",
-      149,
-      null,
-      "USD"
-    ],
-    [
-      "Car-5.3",
-      106,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-5.2",
-      91,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-5.2",
-      82,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-5.2",
-      143,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-5.2",
-      80,
-      null,
-      "USD"
-    ],
-    [
-      "Car-5.2",
-      57,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-5.1",
-      63,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-5.1",
-      82,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-5.1",
-      132,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-5.1",
-      86,
-      null,
-      "USD"
-    ],
-    [
-      "Car-5.1",
-      61,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-4.4",
-      78,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-4.4",
-      162,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-4.4",
-      185,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-4.4",
-      149,
-      null,
-      "USD"
-    ],
-    [
-      "Car-4.4",
-      106,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-4.3",
-      91,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-4.3",
-      88,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-4.3",
-      160,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-4.3",
-      86,
-      null,
-      "USD"
-    ],
-    [
-      "Car-4.3",
-      62,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-4.2",
-      91,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-4.2",
-      88,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-4.2",
-      132,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-4.2",
-      86,
-      null,
-      "USD"
-    ],
-    [
-      "Car-4.2",
-      62,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-4.1",
-      63,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-4.1",
-      98,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-4.1",
-      178,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-4.1",
-      104,
-      null,
-      "USD"
-    ],
-    [
-      "Car-4.1",
-      74,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-3.5",
-      77,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-3.5",
-      142,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-3.5",
-      191,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-3.5",
-      151,
-      null,
-      "USD"
-    ],
-    [
-      "Car-3.5",
-      108,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-3.4",
-      38,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-3.4",
-      69,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-3.4",
-      93,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-3.4",
-      60,
-      null,
-      "USD"
-    ],
-    [
-      "Car-3.4",
-      43,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-3.3",
-      77,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-3.3",
-      142,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-3.3",
-      191,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-3.3",
-      151,
-      null,
-      "USD"
-    ],
-    [
-      "Car-3.3",
-      108,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-3.2",
-      77,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-3.2",
-      137,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-3.2",
-      191,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-3.2",
-      147,
-      null,
-      "USD"
-    ],
-    [
-      "Car-3.2",
-      105,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-3.1",
-      77,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-3.1",
-      142,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-3.1",
-      191,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-3.1",
-      157,
-      null,
-      "USD"
-    ],
-    [
-      "Car-3.1",
-      112,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-2.6",
-      59,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-2.6",
-      93,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-2.6",
-      168,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-2.6",
-      94,
-      null,
-      "USD"
-    ],
-    [
-      "Car-2.6",
-      67,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-2.5",
-      38,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-2.5",
-      37,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-2.5",
-      93,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-2.5",
-      57,
-      null,
-      "USD"
-    ],
-    [
-      "Car-2.5",
-      41,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-2.4",
-      59,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-2.4",
-      93,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-2.4",
-      168,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-2.4",
-      94,
-      null,
-      "USD"
-    ],
-    [
-      "Car-2.4",
-      67,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-2.3",
-      49,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-2.3",
-      82,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-2.3",
-      143,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-2.3",
-      80,
-      null,
-      "USD"
-    ],
-    [
-      "Car-2.3",
-      57,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-2.2",
-      54,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-2.2",
-      88,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-2.2",
-      160,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-2.2",
-      91,
-      null,
-      "USD"
-    ],
-    [
-      "Car-2.2",
-      65,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-2.1",
-      59,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-2.1",
-      93,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-2.1",
-      170,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-2.1",
-      95,
-      null,
-      "USD"
-    ],
-    [
-      "Car-2.1",
-      68,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-1.7",
-      56,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-1.7",
-      95,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-1.7",
-      132,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-1.7",
-      88,
-      null,
-      "USD"
-    ],
-    [
-      "Car-1.7",
-      63,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-1.6",
-      56,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-1.6",
-      95,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-1.6",
-      132,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-1.6",
-      88,
-      null,
-      "USD"
-    ],
-    [
-      "Car-1.6",
-      63,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-1.5",
-      38,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-1.5",
-      75,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-1.5",
-      95,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-1.5",
-      60,
-      null,
-      "USD"
-    ],
-    [
-      "Car-1.5",
-      45,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-1.4",
-      56,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-1.4",
-      95,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-1.4",
-      132,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-1.4",
-      86,
-      null,
-      "USD"
-    ],
-    [
-      "Car-1.4",
-      63,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-1.3",
-      56,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-1.3",
-      95,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-1.3",
-      132,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-1.3",
-      86,
-      null,
-      "USD"
-    ],
-    [
-      "Car-1.3",
-      63,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-1.2",
-      38,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-1.2",
-      37,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-1.2",
-      95,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-1.2",
-      57,
-      null,
-      "USD"
-    ],
-    [
-      "Car-1.2",
-      43,
-      null,
-      "USD"
-    ],
-    [
-      "Extra Luggage-1.1",
-      21,
-      null,
-      "USD"
-    ],
-    [
-      "4x4-1.1",
-      33,
-      null,
-      "USD"
-    ],
-    [
-      "Coaster-1.1",
-      67,
-      null,
-      "USD"
-    ],
-    [
-      "Minibus-1.1",
-      32,
-      null,
-      "USD"
-    ],
-    [
-      "Car-1.1",
-      24,
-      null,
-      "USD"
+      "ZURI ZANZIBAR",
+      "North"
     ]
   ]
 }

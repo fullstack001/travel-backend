@@ -13,27 +13,19 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  resetToken: String,
-  resetTokenExpiration: Date,
+  role: {
+    type: String,
+    enum: ["admin", "user", "driver"],
+    default: "user",
+  },
   isAdmin: {
     type: Boolean,
     default: false,
   },
-  credit: {
-    type: Number,
-    default: 0,
-  },
+
   date: {
     type: Date,
     default: Date.now,
-  },
-  follower: {
-    type: String,
-    require: false,
-  },
-  following: {
-    type: Array,
-    default: [],
   },
 });
 

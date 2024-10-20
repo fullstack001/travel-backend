@@ -18,6 +18,8 @@ import service from "./routes/api/service";
 import driver from "./routes/api/driver";
 import vehicle from "./routes/api/vehicle";
 import guid from "./routes/api/guid";
+import driverList from "./routes/api/driverList";
+import excursion from "./routes/api/excursion";
 
 dotenv.config();
 
@@ -43,7 +45,8 @@ app.use("/api/service", service);
 app.use("/api/driver", driver);
 app.use("/api/vehicle", vehicle);
 app.use("/api/guid", guid);
-
+app.use("/api/driver-list", driverList);
+app.use("/api/excursion", excursion);
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });

@@ -4,13 +4,20 @@ const router = express.Router();
 import Resa from "../../models/Resa";
 
 router.post("/getresadata", async (req, res) => {
-  const { filterData, orderKey, orderDirect, page = 1, limit = 10 } = req.body;
+  const {
+    filterData,
+    orderKey,
+    orderDirect,
+    filterOption,
+    page = 1,
+    limit = 10,
+  } = req.body;
   const pageNumber = parseInt(page, 10);
   const pageSize = parseInt(limit, 10);
   try {
     // Fetch data with sorting and pagination
     const filter = filterData
-      ? { client: { $regex: filterData, $options: "i" } } // "i" for case-insensitive search
+      ? { [filterOption]: { $regex: filterData, $options: "i" } } // "i" for case-insensitive search
       : {};
 
     const resaDataPromise = Resa.find(filter)
@@ -54,6 +61,7 @@ router.post("/getresadata-date", async (req, res) => {
     filterData,
     orderKey,
     orderDirect,
+    filterOption,
     page = 1,
     limit = 10,
   } = req.body;
@@ -70,7 +78,9 @@ router.post("/getresadata-date", async (req, res) => {
   try {
     // Fetch data with sorting and pagination
     const filter = {
-      ...(filterData && { client: { $regex: filterData, $options: "i" } }), // Filter by client if filterData is provided
+      ...(filterData && {
+        [filterOption]: { $regex: filterData, $options: "i" },
+      }), // Filter by client if filterData is provided
       service_date: { $gte: startOfDay, $lte: endOfDay }, // Filter by date range
     };
 
@@ -113,6 +123,7 @@ router.post("/deletedata", async (req, res) => {
     filterData,
     orderKey,
     orderDirect,
+    filterOption,
     page = 1,
     limit = 10,
     id,
@@ -124,7 +135,7 @@ router.post("/deletedata", async (req, res) => {
     await Resa.findByIdAndDelete(id);
 
     const filter = filterData
-      ? { client: { $regex: filterData, $options: "i" } } // "i" for case-insensitive search
+      ? { [filterOption]: { $regex: filterData, $options: "i" } } // "i" for case-insensitive search
       : {};
 
     const resaDataPromise = Resa.find(filter)
@@ -166,6 +177,7 @@ router.post("/putresadata", async (req, res) => {
     filterData,
     orderKey,
     orderDirect,
+    filterOption,
     newData,
     page = 1,
     limit = 10,
@@ -181,8 +193,9 @@ router.post("/putresadata", async (req, res) => {
       client: newData.client,
       agency: newData.agency,
       from: newData.from,
-      hotel: newData.hotel,
-      htl_region: newData.htl_region,
+      to: newData.hotel,
+      from_region: newData.htl_region,
+      to_region: newData.to_region,
       service_date: newData.service_date,
       endofservice: newData.endofservice,
       type_vehicle: newData.type_vehicle,
@@ -202,6 +215,9 @@ router.post("/putresadata", async (req, res) => {
       status: newData.status,
       effect_date: newData.effect_date,
       pickup_time: newData.pickup_time,
+      verified: newData.verified,
+      by: newData.by,
+      last_update: Date.now(),
     };
     if (newData._id) {
       // Check if the document with the given _id exists
@@ -216,7 +232,7 @@ router.post("/putresadata", async (req, res) => {
       await Resa.create(newItem);
     }
     const filter = filterData
-      ? { client: { $regex: filterData, $options: "i" } } // "i" for case-insensitive search
+      ? { [filterOption]: { $regex: filterData, $options: "i" } } // "i" for case-insensitive search
       : {};
 
     const resaDataPromise = Resa.find(filter)
@@ -348,8 +364,9 @@ router.post("/putdailydata", async (req, res) => {
       client: newData.client,
       agency: newData.agency,
       from: newData.from,
-      hotel: newData.hotel,
-      htl_region: newData.htl_region,
+      to: newData.to,
+      from_region: newData.from_region,
+      to_region: newData.to_region,
       service_date: newData.service_date,
       endofservice: newData.endofservice,
       type_vehicle: newData.type_vehicle,
@@ -371,6 +388,9 @@ router.post("/putdailydata", async (req, res) => {
       effect_date: newData.effect_date,
       driver: newData.driver,
       guid: newData.guid,
+      verified: newData.verified,
+      by: newData.by,
+      last_update: Date.now(),
     };
     if (newData._id) {
       // Check if the document with the given _id exists

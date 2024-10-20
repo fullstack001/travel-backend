@@ -7,6 +7,12 @@ const GuidSchema = new mongoose.Schema({
   name: {
     type: String,
   },
+  language: {
+    type: Array,
+  },
+  license: {
+    type: Array,
+  },
   date: {
     type: Date,
     default: Date.now(),

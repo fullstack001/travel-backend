@@ -5,6 +5,10 @@ const AgencySchema = new mongoose.Schema({
     type: Number,
     require: true,
   },
+  ref: {
+    type: String,
+    require: true,
+  },
   name: {
     type: String,
     require: true,
@@ -17,19 +21,11 @@ const AgencySchema = new mongoose.Schema({
     type: String,
     default: "",
   },
-  name2: {
-    type: String,
-  },
+
   email: {
     type: String,
   },
   website: {
-    type: String,
-  },
-  status: {
-    type: String,
-  },
-  tax: {
     type: String,
   },
   date: {
