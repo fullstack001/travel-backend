@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 const ResaSchema = new mongoose.Schema({
   dossier_no: {
     type: Number,
+    unique: true,
   },
   by: {
     type: String,
@@ -104,9 +105,7 @@ const ResaSchema = new mongoose.Schema({
   guid: {
     type: String,
   },
-  agency_ref_no: {
-    type: String,
-  },
+  license: { type: Array },
   pickup_time: {
     type: String,
   },

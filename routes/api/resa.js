@@ -231,6 +231,16 @@ router.post("/putresadata", async (req, res) => {
       }
     } else {
       // If _id is empty or not provided, create a new document
+      let dossierNo = newData.dossier_no;
+      let existingItem;
+      do {
+        existingItem = await Resa.findOne({ dossier_no: dossierNo });
+        if (existingItem) {
+          dossierNo++;
+        }
+      } while (existingItem);
+
+      newItem.dossier_no = dossierNo;
       await Resa.create(newItem);
     }
     const filter = filterData
@@ -391,6 +401,7 @@ router.post("/putdailydata", async (req, res) => {
       effect_date: newData.effect_date,
       driver: newData.driver,
       guid: newData.guid,
+      license: newData.license,
       verified: newData.verified,
       by: newData.by,
       amount: newData.amount,
@@ -406,6 +417,16 @@ router.post("/putdailydata", async (req, res) => {
       }
     } else {
       // If _id is empty or not provided, create a new document
+      let dossierNo = newData.dossier_no;
+      let existingItem;
+      do {
+        existingItem = await Resa.findOne({ dossier_no: dossierNo });
+        if (existingItem) {
+          dossierNo++;
+        }
+      } while (existingItem);
+
+      newItem.dossier_no = dossierNo;
       await Resa.create(newItem);
     }
 
@@ -446,25 +467,28 @@ router.post("/putdailydata", async (req, res) => {
 });
 
 router.post("/getexportdata", async (req, res) => {
-  const { start, end } = req.body.data;
+  const { start, end, filterData, filterOption } = req.body.data;
 
   try {
     let query = {};
 
-    if (start && end && !(new Date(end) > new Date(start))) {
-      // Start of the day (00:00:00)
+    // Date range filter
+    if (start && end) {
       const startOfDay = new Date(start);
       startOfDay.setHours(0, 0, 0, 0);
 
-      // End of the day (23:59:59.999)
       const endOfDay = new Date(end);
       endOfDay.setHours(23, 59, 59, 999);
 
-      // If start and end are valid, create a query to filter by service_date
       query.service_date = {
         $gte: startOfDay,
-        $lt: endOfDay,
+        $lte: endOfDay,
       };
+    }
+
+    // Additional filter based on filterData and filterOption
+    if (filterData && filterOption) {
+      query[filterOption] = { $regex: filterData, $options: "i" };
     }
 
     const resaData = await Resa.find(query);
