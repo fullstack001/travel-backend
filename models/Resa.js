@@ -78,7 +78,7 @@ const ResaSchema = new mongoose.Schema({
   vehicle_type: {
     type: String,
   },
-  inv_no: {
+  invoice_no: {
     type: String,
   },
   amount: {
