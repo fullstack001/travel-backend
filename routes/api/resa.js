@@ -285,21 +285,7 @@ router.post("/deletedailydata", async (req, res) => {
     // Delete the document with the specified id
     await Resa.findByIdAndDelete(id);
 
-    const startOfDay = new Date(start);
-    startOfDay.setDate(startOfDay.getDate());
-    startOfDay.setHours(0, 0, 0, 0);
-
-    // End of the day (23:59:59.999)
-    const endOfDay = new Date(end);
-    endOfDay.setDate(endOfDay.getDate());
-    endOfDay.setHours(23, 59, 59, 999);
-
-    const resaData = await Resa.find({
-      service_date: {
-        $gte: startOfDay,
-        $lt: endOfDay,
-      },
-    });
+    const resaData = await Resa.find();
 
     // Find the maximum res_num within the same date range
     const maxResNum = await Resa.aggregate([
@@ -322,7 +308,7 @@ router.post("/deletedailydata", async (req, res) => {
 });
 
 router.post("/putdailydata", async (req, res) => {
-  const { start, end, newData } = req.body;
+  const { newData } = req.body;
   console.log(newData);
 
   try {
@@ -388,21 +374,7 @@ router.post("/putdailydata", async (req, res) => {
       await Resa.create(newItem);
     }
 
-    const startOfDay = new Date(start);
-    startOfDay.setDate(startOfDay.getDate());
-    startOfDay.setHours(0, 0, 0, 0);
-
-    // End of the day (23:59:59.999)
-    const endOfDay = new Date(end);
-    endOfDay.setDate(endOfDay.getDate());
-    endOfDay.setHours(23, 59, 59, 999);
-
-    const resaData = await Resa.find({
-      service_date: {
-        $gte: startOfDay,
-        $lt: endOfDay,
-      },
-    });
+    const resaData = await Resa.find();
 
     // Find the maximum res_num within the same date range
     const maxResNum = await Resa.aggregate([
