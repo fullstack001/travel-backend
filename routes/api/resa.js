@@ -3,6 +3,16 @@ const router = express.Router();
 
 import Resa from "../../models/Resa";
 
+router.get("/getalldata", async (req, res) => {
+  try {
+    const resaData = await Resa.find();
+    res.json(resaData);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server error");
+  }
+});
+
 router.post("/getresadata", async (req, res) => {
   const {
     filterData,
