@@ -130,50 +130,25 @@ router.post("/getresadata-date", async (req, res) => {
 
 router.post("/deletedata", async (req, res) => {
   const {
-    filterData,
-    orderKey,
-    orderDirect,
-    filterOption,
-    page = 1,
-    limit = 10,
     id,
   } = req.body;
-  const pageNumber = parseInt(page, 10);
-  const pageSize = parseInt(limit, 10);
+
   try {
     // Delete the document with the specified id
     await Resa.findByIdAndDelete(id);
 
-    const filter = filterData
-      ? { [filterOption]: { $regex: filterData, $options: "i" } } // "i" for case-insensitive search
-      : {};
-
-    const resaDataPromise = Resa.find(filter)
-      .sort({ [orderDirect]: orderKey === "asc" ? 1 : -1 }) // Sort based on order and orderBy
-      .skip((pageNumber - 1) * pageSize) // Skip to the correct page
-      .limit(pageSize); // Limit the number of records
-
-    const totalDocumentsPromise = Resa.countDocuments(filter); // Include the filter here
+    const resaData = await Resa.find();
 
     const maxDossierNoPromise = Resa.aggregate([
       { $group: { _id: null, maxDossierNo: { $max: "$dossier_no" } } },
     ]);
 
-    // Resolve all promises concurrently
-    const [resaData, totalDocuments, maxDossierNoResult] = await Promise.all([
-      resaDataPromise,
-      totalDocumentsPromise,
-      maxDossierNoPromise,
-    ]);
-
+    const maxDossierNoResult = await maxDossierNoPromise;
     const maxDossierNo =
       maxDossierNoResult.length > 0 ? maxDossierNoResult[0].maxDossierNo : null;
     // Send response
     res.json({
       data: resaData,
-      currentPage: pageNumber,
-      totalPages: Math.ceil(totalDocuments / pageSize),
-      totalItems: totalDocuments,
       maxDossierNo: maxDossierNo,
     });
   } catch (err) {
@@ -183,17 +158,7 @@ router.post("/deletedata", async (req, res) => {
 });
 
 router.post("/putresadata", async (req, res) => {
-  const {
-    filterData,
-    orderKey,
-    orderDirect,
-    filterOption,
-    newData,
-    page = 1,
-    limit = 10,
-  } = req.body;
-  const pageNumber = parseInt(page, 10);
-  const pageSize = parseInt(limit, 10);
+  const { newData } = req.body;
   try {
     console.log(newData);
     const newItem = {
@@ -253,36 +218,19 @@ router.post("/putresadata", async (req, res) => {
       newItem.dossier_no = dossierNo;
       await Resa.create(newItem);
     }
-    const filter = filterData
-      ? { [filterOption]: { $regex: filterData, $options: "i" } } // "i" for case-insensitive search
-      : {};
 
-    const resaDataPromise = Resa.find(filter)
-      .sort({ [orderDirect]: orderKey === "asc" ? 1 : -1 }) // Sort based on order and orderBy
-      .skip((pageNumber - 1) * pageSize) // Skip to the correct page
-      .limit(pageSize); // Limit the number of records
-
-    const totalDocumentsPromise = Resa.countDocuments(filter); // Include the filter here
+    const resaData = await Resa.find();
 
     const maxDossierNoPromise = Resa.aggregate([
       { $group: { _id: null, maxDossierNo: { $max: "$dossier_no" } } },
     ]);
 
-    // Resolve all promises concurrently
-    const [resaData, totalDocuments, maxDossierNoResult] = await Promise.all([
-      resaDataPromise,
-      totalDocumentsPromise,
-      maxDossierNoPromise,
-    ]);
-
+    const maxDossierNoResult = await maxDossierNoPromise;
     const maxDossierNo =
       maxDossierNoResult.length > 0 ? maxDossierNoResult[0].maxDossierNo : null;
-    // Send response
+
     res.json({
       data: resaData,
-      currentPage: pageNumber,
-      totalPages: Math.ceil(totalDocuments / pageSize),
-      totalItems: totalDocuments,
       maxDossierNo: maxDossierNo,
     });
   } catch (error) {
