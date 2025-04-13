@@ -129,9 +129,7 @@ router.post("/getresadata-date", async (req, res) => {
 });
 
 router.post("/deletedata", async (req, res) => {
-  const {
-    id,
-  } = req.body;
+  const { id } = req.body;
 
   try {
     // Delete the document with the specified id
@@ -160,7 +158,6 @@ router.post("/deletedata", async (req, res) => {
 router.post("/putresadata", async (req, res) => {
   const { newData } = req.body;
   try {
-    console.log(newData);
     const newItem = {
       dossier_no: newData.dossier_no,
       service_type: newData.service_type,
@@ -309,10 +306,8 @@ router.post("/deletedailydata", async (req, res) => {
 
 router.post("/putdailydata", async (req, res) => {
   const { newData } = req.body;
-  console.log(newData);
 
   try {
-    console.log(newData);
     const newItem = {
       dossier_no: newData.dossier_no,
       service_type: newData.service_type,
